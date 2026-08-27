@@ -28,6 +28,8 @@ const VERIFIED_WEBSITES_PATH = path.join(__dirname, 'verified-websites.json');
 // doesn't get accidentally undone by a future re-scrape.
 const EXCLUDED_IDS = new Set([
   'pp-752765566', // "Covenant Health System" — resolves to Providence's Covenant Health in Lubbock, TX; the WA address is a tax-filing address, not a WA-serving org
+  'pp-462710915', // "Herons Key" — real org, but physically located in Gig Harbor (Pierce County), not King/Snohomish; the Redmond address is parent org Emerald Communities' HQ
+  'pp-910655392', // "Kadlec Regional Medical Center" — real Providence hospital, but physically located in Richland (Benton County); the Renton address is a shared Providence tax-filing address
 ]);
 const OPPORTUNITIES_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'opportunities.json');
 const JOBS_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'jobs.json');
