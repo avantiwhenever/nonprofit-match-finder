@@ -65,16 +65,40 @@ browser (Playwright), not just a successful build.
 job listings, hand-pulled directly from each of the 5 curated orgs' real
 volunteer/careers pages (`scripts/curated-opportunities.json` — 16 real
 opportunities with schedule/commitment/requirements/sign-up links;
-`scripts/curated-jobs.json` — 12 real jobs, including full pay ranges for
-Cocoon House's 9 open roles). The app now has three tabs (Nonprofits /
-Volunteer Opportunities / Paid Jobs), plus a County filter (King /
-Snohomish / Both) — both explicit product decisions, not automated at
-directory scale. Deliberately scoped to just the 5 already-curated orgs
-rather than attempted across all 275 ProPublica-sourced ones, since most of
-those don't even have a known website (see the ProPublica gap above) —
-visiting 275 unknown sites isn't something to automate reliably yet.
-Growing this list is manual, one real org at a time, until Idealist access
-replaces it with a real feed.
+`scripts/curated-jobs.json` — 41 real jobs across the 4 orgs). The app now
+has three tabs (Nonprofits / Volunteer Opportunities / Paid Jobs), plus a
+County filter (King / Snohomish / Both) — both explicit product decisions,
+not automated at directory scale. Deliberately scoped to just the 5
+already-curated orgs rather than attempted across all 275 ProPublica-sourced
+ones, since most of those don't even have a known website (see the
+ProPublica gap above) — visiting 275 unknown sites isn't something to
+automate reliably yet. Growing this list is manual, one real org at a time,
+until Idealist access replaces it with a real feed.
+
+**Third pass (same day) — a real gotcha, now handled systematically**:
+`voaww.org/jobs` and `bgcsc.org/employment/` both initially looked like they
+had zero open positions. They don't — a plain HTML fetch just can't see
+their listings, because both load them via JavaScript into an embedded ATS
+widget (Paycom for VOAWW, ADP for BGCSC) that never executes on a static
+fetch. Rendering the page with a real headless browser revealed the iframe,
+and the iframe's own URL was the actual listings source: 22 real VOAWW jobs
+and 9 real BGCSC jobs, previously invisible. Cocoon House had a related
+issue at smaller scale: its own `/employment` page's text (fetched
+statically) turned out slightly stale/imprecise on shift locations compared
+to its live Paylocity board — corrected against the authoritative source
+once found.
+
+This is now a formalized, reusable check: `scripts/deep-fetch.mjs` renders
+any URL with a real browser and reports every embedded iframe, so this
+pattern gets caught instead of silently missed next time. It's a dev tool,
+not part of the automated nightly pipeline — see its header comment and the
+README for usage. Applying it retroactively to the other pages already
+scraped (LNC, childcare, Cocoon House's root/volunteer pages, ChildStrive's
+volunteer page) found nothing else hidden — those were already complete.
+One more finding from that pass: the ChildStrive PDF link provided
+(`KPL-Calendar-26-27.pdf`) turned out to be a parent/caregiver "Play &
+Learn" group calendar, not a volunteer or job listing — read, confirmed
+irrelevant to this data model, not force-fit into it.
 
 Two things surfaced during implementation that the original research got
 wrong — corrected in RESEARCH.md:

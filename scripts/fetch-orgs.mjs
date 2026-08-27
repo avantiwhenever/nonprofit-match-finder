@@ -59,7 +59,7 @@ const KING_COUNTY_CITIES = new Set(
 const SNOHOMISH_COUNTY_CITIES = new Set(
   [
     'Lynnwood', 'Mill Creek', 'Mountlake Terrace', 'Edmonds', 'Everett',
-    'Snohomish', 'Monroe', 'Sultan',
+    'Snohomish', 'Monroe', 'Sultan', 'Granite Falls', 'Marysville',
   ].map((c) => c.toLowerCase())
 );
 
