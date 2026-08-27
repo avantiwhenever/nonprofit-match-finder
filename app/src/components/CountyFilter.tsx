@@ -5,29 +5,17 @@ interface CountyFilterProps {
   onSelect: (county: County | null) => void;
 }
 
-const COUNTIES: County[] = ['King', 'Snohomish'];
-
 export function CountyFilter({ selected, onSelect }: CountyFilterProps) {
   return (
-    <div className="county-filter" role="group" aria-label="Filter by county">
-      <span className="county-filter-label">County:</span>
-      <button
-        type="button"
-        className={`county-tile ${selected === null ? 'active' : ''}`}
-        onClick={() => onSelect(null)}
-      >
-        Both
-      </button>
-      {COUNTIES.map((county) => (
-        <button
-          key={county}
-          type="button"
-          className={`county-tile ${selected === county ? 'active' : ''}`}
-          onClick={() => onSelect(selected === county ? null : county)}
-        >
-          {county}
-        </button>
-      ))}
-    </div>
+    <select
+      className="filter-select"
+      value={selected ?? 'both'}
+      onChange={(e) => onSelect(e.target.value === 'both' ? null : (e.target.value as County))}
+      aria-label="Filter by county"
+    >
+      <option value="both">All counties</option>
+      <option value="King">King County</option>
+      <option value="Snohomish">Snohomish County</option>
+    </select>
   );
 }

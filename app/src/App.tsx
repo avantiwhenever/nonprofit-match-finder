@@ -14,7 +14,6 @@ import { JobList } from './components/JobList';
 import { MapView } from './components/MapView';
 import { Pagination } from './components/Pagination';
 import { RadiusFilter } from './components/RadiusFilter';
-import { FilterPanel } from './components/FilterPanel';
 import { usePagination } from './lib/usePagination';
 import { useGeolocation } from './lib/useGeolocation';
 import { coordsForCity } from './lib/cityCoords';
@@ -143,11 +142,11 @@ function App() {
         counts={{ orgs: filteredOrgs.length, opportunities: filteredOpportunities.length, jobs: filteredJobs.length }}
       />
 
-      <FilterPanel activeCount={(selectedCounty ? 1 : 0) + (selectedCause ? 1 : 0) + (geo.status === 'granted' ? 1 : 0)}>
+      <div className="filters-row">
         <CountyFilter selected={selectedCounty} onSelect={setSelectedCounty} />
         <RadiusFilter geo={geo} radius={radius} onRadiusChange={setRadius} />
         <CauseFilterBar causes={causesWithCounts} selected={selectedCause} onSelect={setSelectedCause} />
-      </FilterPanel>
+      </div>
 
       {tab === 'orgs' && geo.status === 'granted' && <MapView orgs={mapOrgs} />}
 

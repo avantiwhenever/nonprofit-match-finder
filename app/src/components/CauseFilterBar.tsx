@@ -8,24 +8,18 @@ interface CauseFilterBarProps {
 
 export function CauseFilterBar({ causes, selected, onSelect }: CauseFilterBarProps) {
   return (
-    <div className="cause-filter-bar" role="group" aria-label="Filter by cause">
-      <button
-        type="button"
-        className={`cause-tile ${selected === null ? 'active' : ''}`}
-        onClick={() => onSelect(null)}
-      >
-        All causes
-      </button>
+    <select
+      className="filter-select"
+      value={selected ?? 'all'}
+      onChange={(e) => onSelect(e.target.value === 'all' ? null : (e.target.value as CauseBundle))}
+      aria-label="Filter by cause"
+    >
+      <option value="all">All causes</option>
       {causes.map(({ bundle, count }) => (
-        <button
-          key={bundle}
-          type="button"
-          className={`cause-tile ${selected === bundle ? 'active' : ''}`}
-          onClick={() => onSelect(selected === bundle ? null : bundle)}
-        >
-          {bundle} <span className="count">{count}</span>
-        </button>
+        <option key={bundle} value={bundle}>
+          {bundle} ({count})
+        </option>
       ))}
-    </div>
+    </select>
   );
 }

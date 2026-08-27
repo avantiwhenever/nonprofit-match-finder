@@ -9,43 +9,34 @@ interface RadiusFilterProps {
 }
 
 export function RadiusFilter({ geo, radius, onRadiusChange }: RadiusFilterProps) {
-  if (geo.status === 'idle' || geo.status === 'loading') {
-    return (
-      <div className="radius-filter">
-        <button type="button" className="radius-locate-btn" onClick={geo.request} disabled={geo.status === 'loading'}>
-          {geo.status === 'loading' ? 'Finding you…' : '📍 Search near me'}
-        </button>
-      </div>
-    );
-  }
+  const value = geo.status === 'granted' ? String(radius) : 'off';
 
-  if (geo.status === 'denied' || geo.status === 'error' || geo.status === 'unsupported') {
-    return (
-      <div className="radius-filter">
-        <span className="radius-error">Couldn't get your location — try again?</span>
-        <button type="button" className="radius-locate-btn" onClick={geo.request}>
-          Retry
-        </button>
-      </div>
-    );
+  function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
+    const v = e.target.value;
+    if (v === 'off') {
+      geo.clear();
+      return;
+    }
+    onRadiusChange(Number(v));
+    if (geo.status !== 'granted') {
+      geo.request();
+    }
   }
 
   return (
     <div className="radius-filter">
-      <span className="radius-active">📍 Within</span>
-      {RADIUS_OPTIONS.map((mi) => (
-        <button
-          key={mi}
-          type="button"
-          className={`radius-tile ${radius === mi ? 'active' : ''}`}
-          onClick={() => onRadiusChange(mi)}
-        >
-          {mi} mi
-        </button>
-      ))}
-      <button type="button" className="radius-clear-btn" onClick={geo.clear}>
-        Clear
-      </button>
+      <select className="filter-select" value={value} onChange={handleChange} aria-label="Filter by distance from me">
+        <option value="off">Any distance</option>
+        {RADIUS_OPTIONS.map((mi) => (
+          <option key={mi} value={mi}>
+            Within {mi} mi
+          </option>
+        ))}
+      </select>
+      {geo.status === 'loading' && <span className="radius-status">Finding you…</span>}
+      {(geo.status === 'denied' || geo.status === 'error' || geo.status === 'unsupported') && (
+        <span className="radius-error">Couldn't get your location</span>
+      )}
     </div>
   );
 }
