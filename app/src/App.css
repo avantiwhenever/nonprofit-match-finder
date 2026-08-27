@@ -283,10 +283,3 @@
   font-size: 13px;
   color: var(--text-muted);
 }
-
-.app-footer {
-  border-top: 1px solid var(--border);
-  padding-top: 16px;
-  color: var(--text-muted);
-  font-size: 12px;
-}

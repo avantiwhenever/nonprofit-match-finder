@@ -127,7 +127,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>Find nonprofit volunteering opportunities near you</h1>
+        <h1>Find nonprofit volunteering opportunities and jobs near you</h1>
         <p className="tagline">
           Browse King &amp; Snohomish County nonprofits, volunteer roles, and
           paid jobs by cause and location. A pilot for people looking for
@@ -176,18 +176,6 @@ function App() {
           </>
         )}
       </main>
-
-      <footer className="app-footer">
-        <p>
-          Nonprofit directory built from the ProPublica Nonprofit Explorer
-          API plus a small set of hand-verified local orgs. Volunteer
-          opportunities and paid jobs are hand-curated from each
-          organization's own volunteer/careers page — not yet automated at
-          scale (see RECOMMENDATIONS.md). This is a discovery tool, not a
-          booking system — clicking through takes you to each organization's
-          own site.
-        </p>
-      </footer>
     </div>
   );
 }

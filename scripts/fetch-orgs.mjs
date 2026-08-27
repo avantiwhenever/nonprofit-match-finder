@@ -20,6 +20,15 @@ const OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'orgs.json');
 const CURATED_PATH = path.join(__dirname, 'curated-orgs.json');
 const CURATED_OPPORTUNITIES_PATH = path.join(__dirname, 'curated-opportunities.json');
 const CURATED_JOBS_PATH = path.join(__dirname, 'curated-jobs.json');
+const VERIFIED_WEBSITES_PATH = path.join(__dirname, 'verified-websites.json');
+
+// Orgs confirmed, during manual website verification, to not actually be
+// what they appear to be from ProPublica's WA-address data alone — kept as
+// an explicit list (with reasons) rather than silently dropped, so this
+// doesn't get accidentally undone by a future re-scrape.
+const EXCLUDED_IDS = new Set([
+  'pp-752765566', // "Covenant Health System" — resolves to Providence's Covenant Health in Lubbock, TX; the WA address is a tax-filing address, not a WA-serving org
+]);
 const OPPORTUNITIES_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'opportunities.json');
 const JOBS_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'jobs.json');
 
@@ -94,6 +103,20 @@ function volunteerSearchUrl(name, city) {
   return `https://www.google.com/search?q=${q}`;
 }
 
+// Once we know an org's real website (see verified-websites.json), scope
+// the fallback search to that domain — much more likely to surface their
+// actual volunteer page than a generic name+city search.
+function siteScopedVolunteerSearchUrl(website) {
+  let host;
+  try {
+    host = new URL(website).hostname;
+  } catch {
+    return null;
+  }
+  const q = encodeURIComponent(`site:${host} volunteer`);
+  return `https://www.google.com/search?q=${q}`;
+}
+
 async function fetchJson(url) {
   const res = await fetch(url, {
     headers: { 'User-Agent': 'nonprofit-match-finder-pilot (contact: repo owner via GitHub)' },
@@ -102,7 +125,16 @@ async function fetchJson(url) {
   return res.json();
 }
 
-async function fetchProPublicaOrgs() {
+async function loadVerifiedWebsites() {
+  try {
+    const raw = await readFile(VERIFIED_WEBSITES_PATH, 'utf-8');
+    return JSON.parse(raw);
+  } catch {
+    return {};
+  }
+}
+
+async function fetchProPublicaOrgs(verifiedWebsites) {
   const byEin = new Map();
 
   for (const groupId of NTEE_SEARCH_GROUPS) {
@@ -121,6 +153,7 @@ async function fetchProPublicaOrgs() {
 
       for (const org of orgs) {
         if (!PILOT_CITIES.has((org.city ?? '').toLowerCase())) continue;
+        if (EXCLUDED_IDS.has(`pp-${org.ein}`)) continue;
         if (byEin.has(org.ein)) continue;
         byEin.set(org.ein, org);
         countThisGroup++;
@@ -146,8 +179,15 @@ async function fetchProPublicaOrgs() {
       console.warn(`[propublica] detail lookup failed for ein=${org.ein}: ${err.message}`);
     }
 
+    const id = `pp-${org.ein}`;
+    // Manually verified via web search (see verified-websites.json) —
+    // ProPublica itself has no website field, this is the closing of that
+    // gap for orgs someone has actually confirmed. Not available for most
+    // orgs yet; falls back to the generic search link when absent.
+    const verifiedWebsite = verifiedWebsites[id] ?? null;
+
     results.push({
-      id: `pp-${org.ein}`,
+      id,
       name: org.name,
       mission: null, // not available from ProPublica — see header comment
       causeBundle: causeBundleFor(nteeCode),
@@ -156,8 +196,10 @@ async function fetchProPublicaOrgs() {
       county: countyForCity(org.city),
       state: org.state,
       address,
-      website: null, // not available from ProPublica — see header comment
-      volunteerUrl: volunteerSearchUrl(org.name, org.city),
+      website: verifiedWebsite,
+      volunteerUrl: verifiedWebsite
+        ? (siteScopedVolunteerSearchUrl(verifiedWebsite) ?? volunteerSearchUrl(org.name, org.city))
+        : volunteerSearchUrl(org.name, org.city),
       source: 'propublica',
     });
   }
@@ -192,7 +234,8 @@ async function loadJsonWithCounty(filePath) {
 
 async function main() {
   console.log('Fetching Washington nonprofit directory from ProPublica...');
-  const scraped = await fetchProPublicaOrgs();
+  const verifiedWebsites = await loadVerifiedWebsites();
+  const scraped = await fetchProPublicaOrgs(verifiedWebsites);
   await fetchDataGovSupplement();
   // Hand-verified entries (real name, mission, and — critically — a real
   // direct volunteer-page URL, unlike the ProPublica-derived search-link
