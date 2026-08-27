@@ -292,5 +292,291 @@
     "signUpUrl": "mailto:connect@childstrive.org",
     "contact": "connect@childstrive.org",
     "county": "Snohomish"
+  },
+  {
+    "id": "opp-pp-464201865-volunteer-with-a-350-seattle-team",
+    "orgId": "pp-464201865",
+    "orgName": "350 Seattle",
+    "title": "Volunteer with a 350 Seattle Team",
+    "description": "350 Seattle is an all-volunteer-run climate justice organization. Volunteers join one of several working teams (e.g., organizing/direct action, communications, fundraising, electoral/GOTV canvassing) depending on interests and skills; the org maintains a Volunteer Opportunities list and a Teams page to help match people to a role.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "Varies by team",
+    "commitment": "Flexible, from occasional to ongoing",
+    "requirements": [
+      "No prior experience required"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://350seattle.org/get-involved/",
+    "contact": "info@350seattle.org",
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-943089631-executive-service-corps-consultant-compe",
+    "orgId": "pp-943089631",
+    "orgName": "501 Commons",
+    "title": "Executive Service Corps Consultant – Compensation Projects",
+    "description": "Skilled professionals volunteer as consultants to nonprofits on compensation policy and analysis as part of 501 Commons' Executive Service Corps.",
+    "causeBundle": "Community Improvement",
+    "city": "Seattle",
+    "schedule": "Project-based",
+    "commitment": "6-12 hours/month for 2-4 months",
+    "requirements": [
+      "Professional experience in compensation policy/analysis"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://www.501commons.org/engage/about-the-service-corps/volunteer-application",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-943089631-executive-service-corps-consultant-board",
+    "orgId": "pp-943089631",
+    "orgName": "501 Commons",
+    "title": "Executive Service Corps Consultant – Board Governance",
+    "description": "Volunteer consultants help nonprofit boards and staff align by updating bylaws, drafting board manuals, providing governance training, and facilitating board discussions.",
+    "causeBundle": "Community Improvement",
+    "city": "Seattle",
+    "schedule": "Project-based",
+    "commitment": "Varies by project",
+    "requirements": [
+      "Nonprofit governance or board leadership experience"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://www.501commons.org/engage/about-the-service-corps/volunteer-application",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-911087612-volunteer-usher",
+    "orgId": "pp-911087612",
+    "orgName": "5th Avenue Theatre Association",
+    "title": "Volunteer Usher",
+    "description": "Volunteers usher performances (arriving roughly two hours before curtain) in exchange for a seat to watch the show. Related front-of-house volunteer roles include Will Call, Front Desk, hosting pre-show \"Show Talks,\" administrative support, special events, and community marketing.",
+    "causeBundle": "Arts & Culture",
+    "city": "Seattle",
+    "schedule": "Show nights, ~2 hours before curtain",
+    "commitment": "Ongoing season; currently a waitlist (roughly a season-long wait)",
+    "requirements": [
+      "Placed on waitlist via Volunteer Coordinator"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://www.5thavenue.org/about/careers/volunteer/",
+    "contact": "info@5thavenue.org",
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910787792-volunteer-usher",
+    "orgId": "pp-910787792",
+    "orgName": "A Contemporary Theatre Inc",
+    "title": "Volunteer Usher",
+    "description": "ACT (now operating as Union Arts Center) recruits volunteer ushers for front-of-house support during performances at the Eagles Auditorium.",
+    "causeBundle": "Arts & Culture",
+    "city": "Seattle",
+    "schedule": "Performance nights",
+    "commitment": "Not specified",
+    "requirements": [],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://www.unionartscenter.org/volunteer-list/",
+    "contact": "volunteer@unionartscenter.org",
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910613583-admin-support-volunteer",
+    "orgId": "pp-910613583",
+    "orgName": "Arboretum Foundation",
+    "title": "Admin Support Volunteer",
+    "description": "Helps keep Arboretum Foundation programs running behind the scenes through data entry, organizing materials, and filing.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "Year-round, weekdays during business hours",
+    "commitment": "Flexible; one-time or recurring shifts",
+    "requirements": [
+      "Minimum age 15",
+      "Basic computer skills"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://app.betterimpact.com/PublicOrganization/d7cfd152-83a8-405a-80fa-b8acdf764425/1",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910613583-garden-steward",
+    "orgId": "pp-910613583",
+    "orgName": "Arboretum Foundation",
+    "title": "Garden Steward",
+    "description": "Assists staff gardeners with maintaining the Arboretum through weeding and mulching while learning plant identification.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "Mid-March through October, Mon/Tue/Thu 9-11am",
+    "commitment": "No formal commitment; encouraged twice monthly, minimum 2 hours/session",
+    "requirements": [
+      "Minimum age 18",
+      "Bring own work gloves",
+      "No experience necessary"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://app.betterimpact.com/PublicOrganization/d7cfd152-83a8-405a-80fa-b8acdf764425/1",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910613583-gift-shop-host",
+    "orgId": "pp-910613583",
+    "orgName": "Arboretum Foundation",
+    "title": "Gift Shop Host",
+    "description": "Staffs the Mary Ellen Mulder Arboretum Gift Shop, engaging with visitors, offering information, and operating the register.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "Tuesday-Sunday, 10am-1pm or 1-4pm shifts",
+    "commitment": "Minimum 2 shifts/month for 6 months (1 shift/month for weekend volunteers)",
+    "requirements": [
+      "Minimum age 18",
+      "Comfortable with guest-facing work",
+      "Willing to learn Square POS system"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://app.betterimpact.com/PublicOrganization/d7cfd152-83a8-405a-80fa-b8acdf764425/1",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910613583-plant-program-volunteer",
+    "orgId": "pp-910613583",
+    "orgName": "Arboretum Foundation",
+    "title": "Plant Program Volunteer",
+    "description": "Grows, cares for, and learns about plants through propagation and nursery work in the Pat Calvert Greenhouse and Cloney-Harris Plant Nursery.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "Tuesdays, Wednesdays, Thursdays; occasional Saturdays",
+    "commitment": "Ongoing, monthly expectations vary by placement",
+    "requirements": [
+      "Ability to bend, lift, and stand",
+      "Beginners welcome for greenhouse roles"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://app.betterimpact.com/PublicOrganization/d7cfd152-83a8-405a-80fa-b8acdf764425/1",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910613583-events-volunteer",
+    "orgId": "pp-910613583",
+    "orgName": "Arboretum Foundation",
+    "title": "Events Volunteer",
+    "description": "Supports Arboretum Foundation events with set-up/breakdown, cashiering, and silent auction support.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "Throughout the year as events arise",
+    "commitment": "One-time or short-term",
+    "requirements": [
+      "Minimum age 18",
+      "Ability to assist with light-to-moderate physical tasks"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://app.betterimpact.com/PublicOrganization/d7cfd152-83a8-405a-80fa-b8acdf764425/1",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910613583-corporate-group-work-party",
+    "orgId": "pp-910613583",
+    "orgName": "Arboretum Foundation",
+    "title": "Corporate/Group Work Party",
+    "description": "Groups weed, remove invasive species, and complete mulching projects with staff guidance; tools provided.",
+    "causeBundle": "Environment",
+    "city": "Seattle",
+    "schedule": "March-November, Tuesdays & Thursdays, 1-3pm",
+    "commitment": "One-time group projects",
+    "requirements": [
+      "Ability to perform outdoor tasks"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://app.betterimpact.com/Application?OrganizationGuid=d7cfd152-83a8-405a-80fa-b8acdf764425&ApplicationFormNumber=2",
+    "contact": null,
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910916176-ongoing-program-volunteer",
+    "orgId": "pp-910916176",
+    "orgName": "Asian Counseling And Referral Service",
+    "title": "Ongoing Program Volunteer",
+    "description": "Longer-term volunteer roles supporting ACRS programs (e.g., food bank, community farm, front desk/reception, program support), with orientation and training provided.",
+    "causeBundle": "Human Services",
+    "city": "Seattle",
+    "schedule": "Varies by role",
+    "commitment": "3- or 6-month commitment",
+    "requirements": [
+      "Orientation and training required"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://bit.ly/LONGTERMVOLUNTEERING",
+    "contact": "volunteer@acrs.org",
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910916176-one-time-event-food-bank-volunteer",
+    "orgId": "pp-910916176",
+    "orgName": "Asian Counseling And Referral Service",
+    "title": "One-Time Event & Food Bank Volunteer",
+    "description": "Single-day volunteer opportunities supporting ACRS events, voter outreach/get-out-the-vote efforts, and the food bank.",
+    "causeBundle": "Human Services",
+    "city": "Seattle",
+    "schedule": "Varies",
+    "commitment": "One-time",
+    "requirements": [],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://bit.ly/ONETIMEVOLUNTEERING",
+    "contact": "volunteer@acrs.org",
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910916176-americorps-member-employment-citizenship",
+    "orgId": "pp-910916176",
+    "orgName": "Asian Counseling And Referral Service",
+    "title": "AmeriCorps Member (Employment, Citizenship, or Children/Youth/Family Programs)",
+    "description": "Full-time, stipended AmeriCorps service placements within ACRS's Employment, Citizenship, and Children/Youth/Family programs.",
+    "causeBundle": "Human Services",
+    "city": "Seattle",
+    "schedule": "Full-time term of service",
+    "commitment": "Full AmeriCorps service term",
+    "requirements": [
+      "AmeriCorps eligibility"
+    ],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "http://bit.ly/2020ACRSWSC",
+    "contact": "volunteer@acrs.org",
+    "county": "King"
+  },
+  {
+    "id": "opp-pp-910718446-bayview-manor-foundation-volunteer",
+    "orgId": "pp-910718446",
+    "orgName": "Bayview Manor Homes",
+    "title": "Bayview Manor Foundation Volunteer",
+    "description": "Volunteer support for the Bayview Manor Foundation, which works alongside Bayview Manor Homes senior living community to raise gifts, bequests, and contributions that subsidize residents without financial resources.",
+    "causeBundle": "Human Services",
+    "city": "Seattle",
+    "schedule": "Varies",
+    "commitment": "Not specified",
+    "requirements": [],
+    "remote": false,
+    "status": "open",
+    "signUpUrl": "https://www.bayviewseattle.org/contact-us/",
+    "contact": "hr@bayviewseattle.org",
+    "county": "King"
   }
 ]
