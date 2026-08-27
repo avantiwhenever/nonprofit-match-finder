@@ -84,6 +84,56 @@
   flex-wrap: wrap;
 }
 
+.radius-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.radius-locate-btn,
+.radius-clear-btn {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.radius-locate-btn:hover,
+.radius-clear-btn:hover {
+  border-color: var(--accent);
+}
+
+.radius-active,
+.radius-error {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.radius-tile {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.radius-tile:hover {
+  border-color: var(--accent);
+}
+
+.radius-tile.active {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .county-filter-label {
   font-size: 13px;
   color: var(--text-muted);
@@ -286,6 +336,38 @@
   color: var(--text-muted);
   padding: 32px 0;
   text-align: center;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.pagination button {
+  padding: 6px 14px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.pagination button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.pagination-status {
+  font-size: 13px;
+  color: var(--text-muted);
 }
 
 .app-footer {

@@ -14,13 +14,6 @@ export function OrgCard({ org }: OrgCardProps) {
         <span className="cause-tag">{org.causeBundle}</span>
       </div>
       <p className="org-city">{org.city}, {org.state} · {org.county} County</p>
-      {org.mission ? (
-        <p className="org-mission">{org.mission}</p>
-      ) : (
-        <p className="org-mission org-mission-unknown">
-          Mission details aren't available from our data source yet.
-        </p>
-      )}
       {org.address && <p className="org-address">{org.address}</p>}
       <div className="org-card-actions">
         {org.website && (

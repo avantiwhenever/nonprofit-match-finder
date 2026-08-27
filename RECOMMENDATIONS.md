@@ -118,6 +118,31 @@ No accounts, database, or tracking in v0 — confirmed as an explicit product
 decision (see README.md's "What this is right now" section for the
 click-through flow), not an oversight.
 
+**Fourth pass (same day) — UI: filters, radius search, pagination**: cause
+filter now shows per-tab (its counts reflect whichever of
+Nonprofits/Opportunities/Jobs is active, not always the org list — e.g. the
+Jobs tab only shows the 2 causes jobs actually exist in, not all 9). Added
+a "Search near me" radius filter (5/10/25/50 mi) using the browser's
+geolocation API against the same city-centroid coordinates the map already
+uses — deliberately city-level, not per-org geocoding, consistent with the
+MapView tradeoff. Added pagination (20/page) to all three tabs, synced to
+the URL as `?type=&page=` so a specific page is a real shareable/typeable
+link — this needed a real fix mid-build: an effect-based "is this the first
+render" guard for resetting pagination on filter changes silently broke
+under React StrictMode's dev-mode double-effect-invocation, wiping out a
+page number restored from the URL right after mount. Replaced with the
+React-documented "compare previous prop in render" pattern, which doesn't
+have that failure mode. Also removed the "mission" field from the org card
+view entirely (per product decision — it's absent for 270 of 275 orgs
+anyway, see the ProPublica gap above, and showing an apologetic placeholder
+for missing data added clutter, not usable value).
+
+One data correction from a user-provided link: Cocoon House's Front Desk
+role is also subject to the org's "screening, background checks,
+orientation, and training" requirement — Tech Center Volunteer already had
+this captured, Front Desk was missing it. Fixed by re-reading the org's own
+page rather than assuming symmetry between similar-sounding roles.
+
 ## Open questions / not yet decided
 
 - Whether to formalize as a nonprofit (affects grant eligibility, see RESEARCH.md)

@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import orgsData from './data/orgs.json';
 import opportunitiesData from './data/opportunities.json';
 import jobsData from './data/jobs.json';
@@ -12,53 +12,117 @@ import { OrgList } from './components/OrgList';
 import { OpportunityList } from './components/OpportunityList';
 import { JobList } from './components/JobList';
 import { MapView } from './components/MapView';
+import { Pagination } from './components/Pagination';
+import { RadiusFilter } from './components/RadiusFilter';
+import { usePagination } from './lib/usePagination';
+import { useGeolocation } from './lib/useGeolocation';
+import { coordsForCity } from './lib/cityCoords';
+import { distanceMiles } from './lib/geo';
+import { readInitialTab, readInitialPage, writeUrlState } from './lib/urlState';
 import './App.css';
+
+const PAGE_SIZE = 20;
+const DEFAULT_RADIUS = 10;
 
 const orgs = orgsData as Org[];
 const opportunities = opportunitiesData as Opportunity[];
 const jobs = jobsData as JobListing[];
 
 function App() {
-  const [tab, setTab] = useState<TabKey>('orgs');
+  const [tab, setTab] = useState<TabKey>(readInitialTab);
+  const initialPage = useRef(readInitialPage()).current;
   const [query, setQuery] = useState('');
   const [selectedCause, setSelectedCause] = useState<CauseBundle | null>(null);
   const [selectedCounty, setSelectedCounty] = useState<County | null>(null);
+  const [radius, setRadius] = useState(DEFAULT_RADIUS);
+  const geo = useGeolocation();
 
   const orgFuse = useMemo(() => createOrgSearch(orgs), []);
   const oppFuse = useMemo(() => createOpportunitySearch(opportunities), []);
   const jobFuse = useMemo(() => createJobSearch(jobs), []);
 
+  const orgById = useMemo(() => new Map(orgs.map((o) => [o.id, o])), []);
+
+  const withinRadius = useMemo(() => {
+    return (city: string) => {
+      if (!geo.coords) return true;
+      const c = coordsForCity(city);
+      if (!c) return false;
+      return distanceMiles(geo.coords[0], geo.coords[1], c[0], c[1]) <= radius;
+    };
+  }, [geo.coords, radius]);
+
+  // "PreCause" = search + county + radius applied, but not the cause filter
+  // itself — used both as the base for the cause-filtered result and to
+  // compute per-cause counts that reflect the other active filters.
+  const orgsPreCause = useMemo(() => {
+    let result = runSearch(orgFuse, query, orgs);
+    if (selectedCounty) result = result.filter((o) => o.county === selectedCounty);
+    result = result.filter((o) => withinRadius(o.city));
+    return result;
+  }, [orgFuse, query, selectedCounty, withinRadius]);
+
+  const oppsPreCause = useMemo(() => {
+    let result = runSearch(oppFuse, query, opportunities);
+    if (selectedCounty) result = result.filter((o) => o.county === selectedCounty);
+    result = result.filter((o) => withinRadius(o.city));
+    return result;
+  }, [oppFuse, query, selectedCounty, withinRadius]);
+
+  const jobsPreCause = useMemo(() => {
+    let result = runSearch(jobFuse, query, jobs);
+    if (selectedCounty) result = result.filter((j) => j.county === selectedCounty);
+    result = result.filter((j) => withinRadius(j.city));
+    return result;
+  }, [jobFuse, query, selectedCounty, withinRadius]);
+
+  // Cause filter tiles + counts are specific to whichever tab is active, so
+  // they always reflect what that tab's data actually contains.
   const causesWithCounts = useMemo(() => {
     const counts = new Map<CauseBundle, number>();
-    for (const org of orgs) {
-      counts.set(org.causeBundle, (counts.get(org.causeBundle) ?? 0) + 1);
+    const bump = (bundle: CauseBundle | undefined) => {
+      if (!bundle) return;
+      counts.set(bundle, (counts.get(bundle) ?? 0) + 1);
+    };
+    if (tab === 'orgs') {
+      for (const o of orgsPreCause) bump(o.causeBundle);
+    } else if (tab === 'opportunities') {
+      for (const o of oppsPreCause) bump(o.causeBundle);
+    } else {
+      for (const j of jobsPreCause) bump(orgById.get(j.orgId)?.causeBundle);
     }
     return [...counts.entries()]
       .map(([bundle, count]) => ({ bundle, count }))
       .sort((a, b) => b.count - a.count);
-  }, []);
+  }, [tab, orgsPreCause, oppsPreCause, jobsPreCause, orgById]);
 
   const filteredOrgs = useMemo(() => {
-    let result = runSearch(orgFuse, query, orgs);
-    if (selectedCause) result = result.filter((o) => o.causeBundle === selectedCause);
-    if (selectedCounty) result = result.filter((o) => o.county === selectedCounty);
-    return result;
-  }, [orgFuse, query, selectedCause, selectedCounty]);
+    return selectedCause ? orgsPreCause.filter((o) => o.causeBundle === selectedCause) : orgsPreCause;
+  }, [orgsPreCause, selectedCause]);
 
   const filteredOpportunities = useMemo(() => {
-    let result = runSearch(oppFuse, query, opportunities);
-    if (selectedCause) result = result.filter((o) => o.causeBundle === selectedCause);
-    if (selectedCounty) result = result.filter((o) => o.county === selectedCounty);
-    return result;
-  }, [oppFuse, query, selectedCause, selectedCounty]);
+    return selectedCause ? oppsPreCause.filter((o) => o.causeBundle === selectedCause) : oppsPreCause;
+  }, [oppsPreCause, selectedCause]);
 
   const filteredJobs = useMemo(() => {
-    let result = runSearch(jobFuse, query, jobs);
-    if (selectedCounty) result = result.filter((j) => j.county === selectedCounty);
-    return result;
-  }, [jobFuse, query, selectedCounty]);
+    return selectedCause
+      ? jobsPreCause.filter((j) => orgById.get(j.orgId)?.causeBundle === selectedCause)
+      : jobsPreCause;
+  }, [jobsPreCause, selectedCause, orgById]);
 
   const mapOrgs = tab === 'orgs' ? filteredOrgs : orgs;
+
+  const orgPage = usePagination(filteredOrgs, PAGE_SIZE, tab === 'orgs' ? initialPage : 1);
+  const oppPage = usePagination(filteredOpportunities, PAGE_SIZE, tab === 'opportunities' ? initialPage : 1);
+  const jobPage = usePagination(filteredJobs, PAGE_SIZE, tab === 'jobs' ? initialPage : 1);
+
+  const activePage = tab === 'orgs' ? orgPage.page : tab === 'opportunities' ? oppPage.page : jobPage.page;
+
+  // Keep the URL's ?type=&page= in sync with what's actually showing, so a
+  // deep link (e.g. shared or typed in directly) lands on the right view.
+  useEffect(() => {
+    writeUrlState(tab, activePage);
+  }, [tab, activePage]);
 
   return (
     <div className="app">
@@ -67,8 +131,7 @@ function App() {
         <p className="tagline">
           Browse King &amp; Snohomish County nonprofits, volunteer roles, and
           paid jobs by cause and location. A pilot for people looking for
-          community, structure, and social impact — especially while job
-          hunting.
+          community, structure, and social impact.
         </p>
         <SearchBar value={query} onChange={setQuery} />
       </header>
@@ -80,10 +143,8 @@ function App() {
       />
 
       <CountyFilter selected={selectedCounty} onSelect={setSelectedCounty} />
-
-      {tab !== 'jobs' && (
-        <CauseFilterBar causes={causesWithCounts} selected={selectedCause} onSelect={setSelectedCause} />
-      )}
+      <RadiusFilter geo={geo} radius={radius} onRadiusChange={setRadius} />
+      <CauseFilterBar causes={causesWithCounts} selected={selectedCause} onSelect={setSelectedCause} />
 
       {tab === 'orgs' && <MapView orgs={mapOrgs} />}
 
@@ -91,7 +152,8 @@ function App() {
         {tab === 'orgs' && (
           <>
             <p className="result-count">{filteredOrgs.length} nonprofit{filteredOrgs.length === 1 ? '' : 's'}</p>
-            <OrgList orgs={filteredOrgs} />
+            <OrgList orgs={orgPage.pageItems} />
+            <Pagination page={orgPage.page} totalPages={orgPage.totalPages} onChange={orgPage.setPage} />
           </>
         )}
         {tab === 'opportunities' && (
@@ -100,13 +162,15 @@ function App() {
               {filteredOpportunities.length} volunteer opportunit{filteredOpportunities.length === 1 ? 'y' : 'ies'}
               {' — '}hand-verified from each organization's own site
             </p>
-            <OpportunityList opportunities={filteredOpportunities} />
+            <OpportunityList opportunities={oppPage.pageItems} />
+            <Pagination page={oppPage.page} totalPages={oppPage.totalPages} onChange={oppPage.setPage} />
           </>
         )}
         {tab === 'jobs' && (
           <>
             <p className="result-count">{filteredJobs.length} paid job{filteredJobs.length === 1 ? '' : 's'}</p>
-            <JobList jobs={filteredJobs} />
+            <JobList jobs={jobPage.pageItems} />
+            <Pagination page={jobPage.page} totalPages={jobPage.totalPages} onChange={jobPage.setPage} />
           </>
         )}
       </main>
