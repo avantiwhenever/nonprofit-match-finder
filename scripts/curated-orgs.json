@@ -1,0 +1,67 @@
+[
+  {
+    "id": "curated-lnc",
+    "name": "Lynnwood Neighborhood Center",
+    "mission": "Brings essential services and community spaces together in one location — youth programs, adult services, community resources, and wellness services — for Lynnwood, Edmonds, Mountlake Terrace, Shoreline, and surrounding communities.",
+    "causeBundle": "Human Services",
+    "nteeCode": null,
+    "city": "Lynnwood",
+    "state": "WA",
+    "address": "19509 64th Ave W, Lynnwood, WA 98036",
+    "website": "https://www.voaww.org/lnc",
+    "volunteerUrl": "http://volunteer.voaww.org",
+    "source": "curated"
+  },
+  {
+    "id": "curated-bgcsc",
+    "name": "Boys & Girls Clubs of Snohomish County",
+    "mission": "Provides young people ages 5-18 with a safe and positive place to spend their time before and after school and during the summer, helping them reach their full potential as productive, caring, responsible citizens.",
+    "causeBundle": "Youth Development",
+    "nteeCode": null,
+    "city": "Everett",
+    "state": "WA",
+    "address": "8223 Broadway, Suite 100, Everett, WA 98203",
+    "website": "https://bgcsc.org/",
+    "volunteerUrl": "https://bgcsc.org/get-involved/volunteer/",
+    "source": "curated"
+  },
+  {
+    "id": "curated-voaww-childcare",
+    "name": "VOAWW Early Learning & Child Care",
+    "mission": "High-quality, play-based early learning and ECEAP preschool with social-emotional support, parent engagement, and daily enrichment activities for young children.",
+    "causeBundle": "Education",
+    "nteeCode": null,
+    "city": "Lynnwood",
+    "state": "WA",
+    "address": null,
+    "website": "https://www.voaww.org/childcare",
+    "volunteerUrl": "https://www.voaww.org/volunteer",
+    "source": "curated"
+  },
+  {
+    "id": "curated-cocoonhouse",
+    "name": "Cocoon House",
+    "mission": "Breaks the cycle of youth homelessness by providing shelter, housing support, family engagement, outreach, and education/employment services, meeting youth where they are.",
+    "causeBundle": "Human Services",
+    "nteeCode": null,
+    "city": "Everett",
+    "state": "WA",
+    "address": "3530 Colby Ave, Everett, WA 98201",
+    "website": "https://www.cocoonhouse.org/",
+    "volunteerUrl": "https://www.cocoonhouse.org/volunteer",
+    "source": "curated"
+  },
+  {
+    "id": "curated-childstrive",
+    "name": "ChildStrive",
+    "mission": "Partners with families and the community to support the success of young children, building on family strengths with support, resources, and relationships that allow them to flourish.",
+    "causeBundle": "Human Services",
+    "nteeCode": null,
+    "city": "Everett",
+    "state": "WA",
+    "address": "906 SE Everett Mall Way, STE 200, Everett, WA 98208",
+    "website": "https://childstrive.org/",
+    "volunteerUrl": "https://childstrive.org/volunteer/",
+    "source": "curated"
+  }
+]

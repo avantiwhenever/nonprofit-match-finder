@@ -30,12 +30,12 @@ website first (no native app yet).
 | Backend | None initially. When needed: Cloudflare Workers or Vercel Functions (free tier) | A JVM backend (Spring Boot) needs ~300-500MB RAM and has slow cold starts on free hosting tiers (30-60s after idle sleep) — not worth it at this scale yet |
 | Search | Static JSON index + client-side search (Fuse.js) | No live query endpoint means nothing for bots to hammer or rate-limit; doubles as the "flat file that can move to a real index later" |
 | Scraper / data refresh | GitHub Actions scheduled workflow (free cron), pulling from open APIs only | Free at this volume; use official APIs (Idealist Open Network API, ProPublica Nonprofit Explorer API, Data.gov) — do not scrape sites like Indeed/LinkedIn whose ToS forbid it |
-| User data (accounts, saved items, applications, certificates) | Supabase free tier (Postgres + built-in Auth + 500MB storage) | No credit card required; one service covers auth + data + storage |
+| User data (accounts, saved items, applications, certificates) | **Deferred, not in v0.** When needed: Supabase free tier (Postgres + built-in Auth + 500MB storage) | Explicit product decision, not an oversight: v0 tracks nothing (see README.md's "What this is right now" section for the click-through flow). No credit card required when this comes back; one service covers auth + data + storage |
 | Logging | Hosting platform's built-in log viewer for now; Grafana Cloud free tier when centralized logging is actually needed | Datadog free tier is 1-day retention/5 hosts; self-hosted ES needs a paid server — both are premature at this scale |
 | Secrets | GitHub Actions secrets + Vercel/Supabase environment variables | Built-in, encrypted, free; a dedicated secrets manager is a team-scale problem |
 | Maps | Leaflet.js + OpenStreetMap tiles | Free, no API key, no billing account required (unlike Google Maps) |
 | Containerization | Docker for whatever backend eventually exists | Costs nothing, keeps the option to move off free tier portable |
-| Certificates | Serverless function generates a PDF once a nonprofit confirms hours | No extra service needed |
+| Certificates | **Deferred, not in v0** — same as user data above. When needed: serverless function generates a PDF once a nonprofit confirms hours | No extra service needed |
 
 ## Roadmap (add when workload justifies it)
 
@@ -48,9 +48,36 @@ website first (no native app yet).
 
 ## Data sources (see RESEARCH.md for full detail)
 
-- **Idealist Open Network API** — primary source for both volunteer opportunities and paid nonprofit jobs (~100k listings, 250k+ orgs)
-- **ProPublica Nonprofit Explorer API** — org enrichment: mission text, NTEE cause codes, financials, from IRS Form 990 filings
-- **Data.gov** — supplementary local/static volunteer datasets (e.g. NYC's, may have WA equivalents to check)
+- **Idealist Open Network API** — primary source for both volunteer opportunities and paid nonprofit jobs (~100k listings, 250k+ orgs); also the only free path to verified org websites at scale, since ProPublica doesn't have one (see below)
+- **ProPublica Nonprofit Explorer API** — org identity + cause code: EIN, name, city/state, street address, NTEE code, raw Form 990 financials. **No mission text, no website field** — confirmed via live API calls, corrects earlier secondary-source research. See RESEARCH.md.
+- **Data.gov** — confirmed dead as of 2026-08-27 (`catalog.data.gov`'s CKAN API 404s on every endpoint). Kept as a non-blocking best-effort step in case it's restored.
+
+## v0 status (as of 2026-08-27)
+
+Built and working: static React (Vite) app, `scripts/fetch-orgs.mjs` pulling
+275 WA nonprofits from ProPublica (filtered to the pilot-area cities) plus 5
+hand-verified curated orgs with real volunteer-page links, client-side
+search/filter (Fuse.js), a Leaflet/OSM map with city-level pins, and a
+nightly GitHub Actions refresh workflow. Verified end-to-end in a real
+browser (Playwright), not just a successful build.
+
+Two things surfaced during implementation that the original research got
+wrong — corrected in RESEARCH.md:
+- **ProPublica has no mission-text or website field**, on either its search
+  or org-detail endpoints (earlier research, from secondary sources, said it
+  did). Product workaround: most cards link out via a constructed Google
+  search ("Search for their volunteer page →") instead of a verified direct
+  link; only the 5 curated orgs get a real "Volunteer page →" link. This is
+  the actual argument for prioritizing Idealist API access — it's not just
+  about opportunity-level data, it's the only free path to verified org
+  websites at scale.
+- **catalog.data.gov's CKAN API is dead** (404 on every endpoint, including
+  a basic health check), despite the human-facing site being up. Kept as a
+  non-blocking best-effort step in the scraper.
+
+No accounts, database, or tracking in v0 — confirmed as an explicit product
+decision (see README.md's "What this is right now" section for the
+click-through flow), not an oversight.
 
 ## Open questions / not yet decided
 
@@ -61,7 +88,8 @@ website first (no native app yet).
 
 ## Next steps
 
-1. Scaffold the repo: React app + GitHub Actions scraper workflow + Supabase schema
-2. Get Idealist Open Network API access (application/approval may take time — start early)
-3. Build the static-JSON-backed search MVP before adding any backend
+1. ~~Scaffold the repo: React app + GitHub Actions scraper workflow~~ — done, see "v0 status" above
+2. Get Idealist Open Network API access (application/approval may take time — start early; this is now the top blocker for both opportunity-level data and verified org websites)
+3. Deploy v0 (Vercel or GitHub Pages) so it's actually usable, not just running locally
 4. Design the LLM ranking prompt (interest + availability → ranked shortlist) and test against sample data before wiring to live listings
+5. Decide the curated-org list's growth path: keep hand-adding real local orgs to `scripts/curated-orgs.json`, or treat it as a stopgap fully superseded once Idealist access lands

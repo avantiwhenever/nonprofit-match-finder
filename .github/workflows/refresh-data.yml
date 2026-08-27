@@ -1,0 +1,35 @@
+name: Refresh nonprofit directory data
+
+on:
+  schedule:
+    # 10:00 UTC = 2-3am Pacific, off-peak
+    - cron: '0 10 * * *'
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest org data
+        run: node scripts/fetch-orgs.mjs
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- app/src/data/orgs.json; then
+            echo "No changes to org data."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add app/src/data/orgs.json
+          git commit -m "Refresh nonprofit directory data"
+          git push
