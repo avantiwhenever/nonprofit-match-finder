@@ -244,8 +244,18 @@ async function main() {
   // fallback). Always merged in, so re-running the scraper never drops them.
   const curated = await loadJsonWithCounty(CURATED_PATH);
 
+  // Dedup by normalized name, not just id — a curated org and its
+  // ProPublica-scraped counterpart have different ids (e.g. "curated-bgcsc"
+  // vs "pp-910549511") but are the same real organization. Found via
+  // Boys & Girls Clubs of Snohomish County appearing twice in the directory.
+  const normalizeName = (name) =>
+    name.toLowerCase().replace(/&/g, 'and').replace(/[^a-z0-9]+/g, ' ').trim();
   const curatedIds = new Set(curated.map((o) => o.id));
-  const orgs = [...curated, ...scraped.filter((o) => !curatedIds.has(o.id))];
+  const curatedNames = new Set(curated.map((o) => normalizeName(o.name)));
+  const orgs = [
+    ...curated,
+    ...scraped.filter((o) => !curatedIds.has(o.id) && !curatedNames.has(normalizeName(o.name))),
+  ];
   orgs.sort((a, b) => a.name.localeCompare(b.name));
 
   await mkdir(path.dirname(OUT_PATH), { recursive: true });
