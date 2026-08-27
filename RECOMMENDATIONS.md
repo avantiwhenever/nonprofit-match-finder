@@ -61,6 +61,21 @@ search/filter (Fuse.js), a Leaflet/OSM map with city-level pins, and a
 nightly GitHub Actions refresh workflow. Verified end-to-end in a real
 browser (Playwright), not just a successful build.
 
+**Second pass added (same day)**: individual volunteer opportunity and paid
+job listings, hand-pulled directly from each of the 5 curated orgs' real
+volunteer/careers pages (`scripts/curated-opportunities.json` — 16 real
+opportunities with schedule/commitment/requirements/sign-up links;
+`scripts/curated-jobs.json` — 12 real jobs, including full pay ranges for
+Cocoon House's 9 open roles). The app now has three tabs (Nonprofits /
+Volunteer Opportunities / Paid Jobs), plus a County filter (King /
+Snohomish / Both) — both explicit product decisions, not automated at
+directory scale. Deliberately scoped to just the 5 already-curated orgs
+rather than attempted across all 275 ProPublica-sourced ones, since most of
+those don't even have a known website (see the ProPublica gap above) —
+visiting 275 unknown sites isn't something to automate reliably yet.
+Growing this list is manual, one real org at a time, until Idealist access
+replaces it with a real feed.
+
 Two things surfaced during implementation that the original research got
 wrong — corrected in RESEARCH.md:
 - **ProPublica has no mission-text or website field**, on either its search

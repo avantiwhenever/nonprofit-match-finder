@@ -13,7 +13,7 @@ export function OrgCard({ org }: OrgCardProps) {
         <h3>{org.name}</h3>
         <span className="cause-tag">{org.causeBundle}</span>
       </div>
-      <p className="org-city">{org.city}, {org.state}</p>
+      <p className="org-city">{org.city}, {org.state} · {org.county} County</p>
       {org.mission ? (
         <p className="org-mission">{org.mission}</p>
       ) : (

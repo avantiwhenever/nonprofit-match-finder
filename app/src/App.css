@@ -39,6 +39,77 @@
   outline-offset: 1px;
 }
 
+.tabs {
+  display: flex;
+  gap: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tab {
+  padding: 10px 16px;
+  border: none;
+  background: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tab:hover {
+  color: var(--text-h);
+}
+
+.tab.active {
+  color: var(--accent-strong);
+  border-bottom-color: var(--accent);
+}
+
+.tab .count {
+  font-size: 11px;
+  color: var(--text-muted);
+  background: var(--tag-bg);
+  padding: 1px 6px;
+  border-radius: 999px;
+}
+
+.county-filter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.county-filter-label {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.county-tile {
+  padding: 5px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--bg-raised);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.county-tile:hover {
+  border-color: var(--accent);
+}
+
+.county-tile.active {
+  background: var(--accent-bg);
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  font-weight: 600;
+}
+
 .cause-filter-bar {
   display: flex;
   flex-wrap: wrap;
@@ -167,6 +238,46 @@
 }
 
 .org-link-primary {
+  font-weight: 600;
+  color: var(--accent-strong);
+}
+
+.opportunity-meta {
+  margin: 4px 0 0;
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 8px;
+}
+
+.opportunity-meta dt {
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.opportunity-meta dd {
+  margin: 0;
+}
+
+.requirements-list {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.requirements-list li {
+  margin-bottom: 2px;
+}
+
+.status-badge {
+  color: #b5651d;
+  font-weight: 600;
+}
+
+.card-paused {
+  opacity: 0.7;
+}
+
+.job-pay {
   font-weight: 600;
   color: var(--accent-strong);
 }

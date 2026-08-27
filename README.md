@@ -9,9 +9,19 @@ grants).
 
 ## What this is right now (v0)
 
-A static, account-free directory: browse/search Seattle-area nonprofits by
-cause and location. Every org card links out to that organization's own site
-— this is a discovery tool, not a booking system. Nothing is tracked.
+A static, account-free directory with three tabs: **Nonprofits** (browse/
+search by cause and location), **Volunteer Opportunities**, and **Paid
+Jobs**. A County filter (King / Snohomish / Both) applies across all three.
+Every card links out to that organization's own site — this is a discovery
+tool, not a booking system. Nothing is tracked.
+
+The Nonprofits tab covers 275 orgs (broad but shallow — name/cause/location
+only, from ProPublica). The Volunteer Opportunities and Paid Jobs tabs are
+narrower but deep: real, individually-detailed listings (schedule,
+commitment, requirements, pay, sign-up links) hand-pulled from just the 5
+curated orgs' actual websites — see `scripts/curated-opportunities.json`
+and `scripts/curated-jobs.json`. Growing that list further is a manual,
+one-org-at-a-time process for now (see RECOMMENDATIONS.md for why).
 
 **Known limitation, by design**: the primary data source (ProPublica's
 Nonprofit Explorer API) has organization-level data only — no individual

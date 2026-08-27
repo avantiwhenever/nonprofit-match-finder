@@ -18,6 +18,10 @@ import { fileURLToPath } from 'node:url';
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'orgs.json');
 const CURATED_PATH = path.join(__dirname, 'curated-orgs.json');
+const CURATED_OPPORTUNITIES_PATH = path.join(__dirname, 'curated-opportunities.json');
+const CURATED_JOBS_PATH = path.join(__dirname, 'curated-jobs.json');
+const OPPORTUNITIES_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'opportunities.json');
+const JOBS_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'jobs.json');
 
 // ProPublica's coarse `ntee[id]` search filter (numeric, confirmed live).
 // We use it only to scope the search; the precise cause bundle is derived
@@ -39,6 +43,32 @@ const PILOT_CITIES = new Set(
     'Tukwila', 'Burien', 'SeaTac', 'Mercer Island', 'Snohomish',
   ].map((c) => c.toLowerCase())
 );
+
+// First-pass geographic scope, per explicit product decision: King and
+// Snohomish county only. All PILOT_CITIES above are already one of the two,
+// so this is mostly a explicit label for the UI/filter, not an additional
+// exclusion — but curated opportunity/job data references a couple of
+// smaller Snohomish towns (Monroe, Sultan) outside PILOT_CITIES too.
+const KING_COUNTY_CITIES = new Set(
+  [
+    'Seattle', 'Bellevue', 'Redmond', 'Kirkland', 'Renton', 'Kent',
+    'Sammamish', 'Issaquah', 'Kenmore', 'Tukwila', 'Burien', 'SeaTac',
+    'Mercer Island', 'Shoreline', 'Woodinville', 'Bothell',
+  ].map((c) => c.toLowerCase())
+);
+const SNOHOMISH_COUNTY_CITIES = new Set(
+  [
+    'Lynnwood', 'Mill Creek', 'Mountlake Terrace', 'Edmonds', 'Everett',
+    'Snohomish', 'Monroe', 'Sultan',
+  ].map((c) => c.toLowerCase())
+);
+
+function countyForCity(city) {
+  const key = (city ?? '').trim().toLowerCase();
+  if (KING_COUNTY_CITIES.has(key)) return 'King';
+  if (SNOHOMISH_COUNTY_CITIES.has(key)) return 'Snohomish';
+  return 'Other';
+}
 
 // NTEE major-group letter -> friendly front-page cause bundle.
 const NTEE_LETTER_TO_BUNDLE = {
@@ -123,6 +153,7 @@ async function fetchProPublicaOrgs() {
       causeBundle: causeBundleFor(nteeCode),
       nteeCode,
       city: org.city,
+      county: countyForCity(org.city),
       state: org.state,
       address,
       website: null, // not available from ProPublica — see header comment
@@ -153,19 +184,20 @@ async function fetchDataGovSupplement() {
   return [];
 }
 
-async function loadCuratedOrgs() {
-  // Hand-verified entries (real name, mission, and — critically — a real
-  // direct volunteer-page URL, unlike the ProPublica-derived search-link
-  // fallback). Always merged in, so re-running the scraper never drops them.
-  const raw = await readFile(CURATED_PATH, 'utf-8');
-  return JSON.parse(raw);
+async function loadJsonWithCounty(filePath) {
+  const raw = await readFile(filePath, 'utf-8');
+  const items = JSON.parse(raw);
+  return items.map((item) => ({ ...item, county: item.county ?? countyForCity(item.city) }));
 }
 
 async function main() {
   console.log('Fetching Washington nonprofit directory from ProPublica...');
   const scraped = await fetchProPublicaOrgs();
   await fetchDataGovSupplement();
-  const curated = await loadCuratedOrgs();
+  // Hand-verified entries (real name, mission, and — critically — a real
+  // direct volunteer-page URL, unlike the ProPublica-derived search-link
+  // fallback). Always merged in, so re-running the scraper never drops them.
+  const curated = await loadJsonWithCounty(CURATED_PATH);
 
   const curatedIds = new Set(curated.map((o) => o.id));
   const orgs = [...curated, ...scraped.filter((o) => !curatedIds.has(o.id))];
@@ -174,6 +206,18 @@ async function main() {
   await mkdir(path.dirname(OUT_PATH), { recursive: true });
   await writeFile(OUT_PATH, JSON.stringify(orgs, null, 2) + '\n');
   console.log(`Wrote ${orgs.length} orgs (${curated.length} curated + ${orgs.length - curated.length} scraped) to ${path.relative(process.cwd(), OUT_PATH)}`);
+
+  // Individual opportunity/job listings are hand-curated only for now (pulled
+  // directly from each org's real volunteer/careers page) — no automated
+  // scraper for these yet, deliberately: most nonprofit sites have no
+  // consistent structure to scrape reliably. See RESEARCH.md.
+  const opportunities = await loadJsonWithCounty(CURATED_OPPORTUNITIES_PATH);
+  await writeFile(OPPORTUNITIES_OUT_PATH, JSON.stringify(opportunities, null, 2) + '\n');
+  console.log(`Wrote ${opportunities.length} opportunities to ${path.relative(process.cwd(), OPPORTUNITIES_OUT_PATH)}`);
+
+  const jobs = await loadJsonWithCounty(CURATED_JOBS_PATH);
+  await writeFile(JOBS_OUT_PATH, JSON.stringify(jobs, null, 2) + '\n');
+  console.log(`Wrote ${jobs.length} jobs to ${path.relative(process.cwd(), JOBS_OUT_PATH)}`);
 }
 
 main().catch((err) => {
