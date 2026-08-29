@@ -72,6 +72,7 @@ const KING_COUNTY_CITIES = new Set(
     'Seattle', 'Bellevue', 'Redmond', 'Kirkland', 'Renton', 'Kent',
     'Sammamish', 'Issaquah', 'Kenmore', 'Tukwila', 'Burien', 'SeaTac',
     'Mercer Island', 'Shoreline', 'Woodinville', 'Bothell',
+    'Federal Way', 'Des Moines', 'Auburn',
   ].map((c) => c.toLowerCase())
 );
 const SNOHOMISH_COUNTY_CITIES = new Set(
