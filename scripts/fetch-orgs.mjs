@@ -37,6 +37,7 @@ const EXCLUDED_IDS = new Set([
   'pp-510216589', // "Providence Health System-southern California" — real Providence entity, but operates in Southern California
   'pp-951684082', // "Providence Saint Johns Health Center" — real hospital, but in Santa Monica, CA
   'pp-814542216', // "Providence Saint Johns Medical Foundation" — fundraising arm of the same Santa Monica, CA hospital
+  'pp-833972614', // "Tarzana Medical Center Llc" — confirmed Providence Cedars-Sinai Tarzana Medical Center, in Tarzana (Los Angeles), CA
 ]);
 const OPPORTUNITIES_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'opportunities.json');
 const JOBS_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'jobs.json');
