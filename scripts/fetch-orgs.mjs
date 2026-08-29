@@ -31,6 +31,12 @@ const EXCLUDED_IDS = new Set([
   'pp-462710915', // "Herons Key" — real org, but physically located in Gig Harbor (Pierce County), not King/Snohomish; the Redmond address is parent org Emerald Communities' HQ
   'pp-910655392', // "Kadlec Regional Medical Center" — real Providence hospital, but physically located in Richland (Benton County); the Renton address is a shared Providence tax-filing address
   'pp-812670401', // "Los Angeles County Facilities Inc" — NTEE code S47 "Real Estate Organizations"; a municipal lease-financing vehicle registered at a Seattle address, not a WA-serving org
+  'pp-941231005', // "Santa Rosa Memorial Hospital" — real hospital, but in Santa Rosa, Sonoma County, CA; uses the same shared Providence Renton tax-filing address as Covenant Health/Kadlec
+  'pp-810231793', // "Providence Health & Services Mt" — real Providence entity, but operates in Montana
+  'pp-510216587', // "Providence Health & Services Oregon" — real Providence entity, but operates in Oregon (Portland/Hood River)
+  'pp-510216589', // "Providence Health System-southern California" — real Providence entity, but operates in Southern California
+  'pp-951684082', // "Providence Saint Johns Health Center" — real hospital, but in Santa Monica, CA
+  'pp-814542216', // "Providence Saint Johns Medical Foundation" — fundraising arm of the same Santa Monica, CA hospital
 ]);
 const OPPORTUNITIES_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'opportunities.json');
 const JOBS_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'jobs.json');
