@@ -28,20 +28,36 @@ one-org-at-a-time process for now (see RECOMMENDATIONS.md for why).
 Some careers/volunteer pages look empty on a plain fetch but actually load
 their real listings via JavaScript into an embedded ATS widget (this bit us
 with VOAWW's Paycom board and BGCSC's ADP board — both looked like zero
-openings until rendered for real). Before concluding a page has no
-listings, check it with:
+openings until rendered for real). Two dev-only tools for this, neither a
+project dependency (kept out of package.json to avoid bloating the deployed
+app — install either on demand):
+
+**`scripts/crawlee-fetch.mjs`** (preferred) — give it just an org's homepage
+and it automatically discovers and follows likely volunteer/careers links
+itself, then reports any embedded iframes and follows one hop further if a
+page links out to an external ATS domain (`paycomonline.net`,
+`workforcenow.adp.com`, `icims.com`, `myworkday.com`, etc. — see the pattern
+list in the script). Verified against bastyr.edu, where it found the hidden
+Paycom chain (`/about/jobs` → paycomonline.net → the real career-page
+iframe) with no prior knowledge of any of those URLs.
+
+```bash
+npm install --no-save crawlee playwright && npx playwright install chromium
+node scripts/crawlee-fetch.mjs https://example.org
+```
+
+Crawlee itself is free and open-source (MIT) — no Apify account or paid
+service required.
+
+**`scripts/deep-fetch.mjs`** (fallback) — the original, simpler tool: renders
+exact URLs you already know to check and reports their iframes, without any
+automatic link-following. Kept as a backup in case crawlee-fetch.mjs proves
+less reliable in practice.
 
 ```bash
 npm install --no-save playwright && npx playwright install chromium
 node scripts/deep-fetch.mjs https://example.org/careers
 ```
-
-It renders the page in a real browser and prints every embedded iframe URL
-— if one points to a domain like `paycomonline.net`, `workforcenow.adp.com`,
-`icims.com`, `myworkday.com`, etc., deep-fetch that URL too; that's where
-the actual listings are. `playwright` is intentionally not a project
-dependency (keeps it out of the deployed app) — install it on demand as
-above.
 
 **Known limitation, by design**: the primary data source (ProPublica's
 Nonprofit Explorer API) has organization-level data only — no individual
