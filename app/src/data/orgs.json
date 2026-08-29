@@ -1689,8 +1689,8 @@
     "county": "King",
     "state": "WA",
     "address": "1300 SW 27TH ST",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Kaiser%20Foundation%20Health%20Plan%20Of%20Washington%20Renton%20WA%20volunteer%20opportunities",
+    "website": "https://healthy.kaiserpermanente.org/washington",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Ahealthy.kaiserpermanente.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1731,8 +1731,8 @@
     "county": "King",
     "state": "WA",
     "address": "1116 108TH NE AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Kidsquest%20Childrens%20Museum%20Bellevue%20WA%20volunteer%20opportunities",
+    "website": "https://kidsquestmuseum.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Akidsquestmuseum.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1745,8 +1745,8 @@
     "county": "King",
     "state": "WA",
     "address": "350 KIRKLAND AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Kirkland%20Performance%20Center%20Kirkland%20WA%20volunteer%20opportunities",
+    "website": "https://kpcenter.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Akpcenter.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1773,8 +1773,8 @@
     "county": "King",
     "state": "WA",
     "address": "4518 UNIVERSITY WAY NE STE 310",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Kuow-puget%20Sound%20Public%20Radio%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://kuow.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Akuow.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1787,8 +1787,8 @@
     "county": "King",
     "state": "WA",
     "address": "14050 1ST AVE NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Lakeside%20School%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.lakesideschool.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.lakesideschool.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1801,8 +1801,8 @@
     "county": "King",
     "state": "WA",
     "address": "6011 CALIFORNIA AVE SW STE 100A",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Leading%20Harvest%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://leadingharvest.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Aleadingharvest.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1815,8 +1815,8 @@
     "county": "King",
     "state": "WA",
     "address": "500 UNION ST",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Legal%20Foundation%20Of%20Washington%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://legalfoundation.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Alegalfoundation.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1843,8 +1843,8 @@
     "county": "King",
     "state": "WA",
     "address": "3650 131ST AVE SE STE 200",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Lifecenter%20Northwest%20Bellevue%20WA%20volunteer%20opportunities",
+    "website": "https://www.lcnw.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.lcnw.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1857,22 +1857,8 @@
     "county": "King",
     "state": "WA",
     "address": "2125 WESTERN AVE STE 300",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Long%20Live%20The%20Kings%20Seattle%20WA%20volunteer%20opportunities",
-    "source": "propublica"
-  },
-  {
-    "id": "pp-812670401",
-    "name": "Los Angeles County Facilities Inc",
-    "mission": null,
-    "causeBundle": "Community Improvement",
-    "nteeCode": "S47",
-    "city": "Seattle",
-    "county": "King",
-    "state": "WA",
-    "address": "1700 7TH AVE STE 2100",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Los%20Angeles%20County%20Facilities%20Inc%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://lltk.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Alltk.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1885,8 +1871,8 @@
     "county": "King",
     "state": "WA",
     "address": "6720 E GREEN LAKE WAY N",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Lutheran%20Retirement%20Home%20Of%20Greater%20Seattle%20Inc%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://hearthstone.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Ahearthstone.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1913,8 +1899,8 @@
     "county": "King",
     "state": "WA",
     "address": "301 UNION ST UNIT 2045",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Marguerite%20Casey%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://caseygrants.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Acaseygrants.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1927,8 +1913,8 @@
     "county": "King",
     "state": "WA",
     "address": "6720 FORT DENT WAY STE 110",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Marine%20Stewardship%20Council%20Limited%20Tukwila%20WA%20volunteer%20opportunities",
+    "website": "https://www.msc.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.msc.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1941,8 +1927,8 @@
     "county": "King",
     "state": "WA",
     "address": "PO BOX 1711",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Marys%20Place%20Seattle%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://marysplaceseattle.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Amarysplaceseattle.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1955,8 +1941,8 @@
     "county": "King",
     "state": "WA",
     "address": "1416 NW 46TH ST STE 105 PMB 146",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Maxaid%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://themaxfoundation.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Athemaxfoundation.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1969,8 +1955,8 @@
     "county": "King",
     "state": "WA",
     "address": "7400 SAND POINT WAY NE SUITE 202",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Mid%20Puget%20Sound%20Fisheries%20Enhancement%20Group%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://midsoundfisheries.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Amidsoundfisheries.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3231,6 +3217,20 @@
     "address": "747 BROADWAY",
     "website": null,
     "volunteerUrl": "https://www.google.com/search?q=Swedish%20Medical%20Center%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "source": "propublica"
+  },
+  {
+    "id": "pp-461629033",
+    "name": "T-mobile Usa Foundation",
+    "mission": null,
+    "causeBundle": "Other",
+    "nteeCode": "T20",
+    "city": "Bellevue",
+    "county": "King",
+    "state": "WA",
+    "address": "12920 SE 38TH ST",
+    "website": null,
+    "volunteerUrl": "https://www.google.com/search?q=T-mobile%20Usa%20Foundation%20Bellevue%20WA%20volunteer%20opportunities",
     "source": "propublica"
   },
   {
