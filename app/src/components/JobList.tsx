@@ -8,7 +8,7 @@ interface JobListProps {
 
 export function JobList({ jobs, orgById }: JobListProps) {
   if (jobs.length === 0) {
-    return <p className="empty-state">No paid jobs match that search yet — try a different county.</p>;
+    return <p className="empty-state">No paid jobs match that search yet</p>;
   }
 
   return (
