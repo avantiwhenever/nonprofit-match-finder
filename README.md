@@ -68,13 +68,16 @@ Nonprofit Explorer API) has organization-level data only — no individual
 opportunity listings, no schedules, no paid/unpaid distinction, no
 volunteering requirements, and (see "Verifying nonprofit websites" below)
 no website field either. Every org shown in the Nonprofits tab has a real,
-hand-verified homepage link, but most still link to their *specific*
-volunteer page via a constructed, site-scoped search ("Search for their
-volunteer page →") rather than a verified direct link — ProPublica's data
-just doesn't go that deep. A small hand-curated set of local orgs
+hand-verified homepage link ("Visit website →"), but ProPublica's data
+doesn't go deep enough to know each org's *specific* volunteer page — a
+constructed Google-search link for that used to fill the gap, but a link
+that just reroutes to a search a visitor could've typed themselves isn't a
+real, actionable listing, so it was dropped entirely rather than shown as
+if it were one. A small hand-curated set of local orgs
 (`scripts/curated-orgs.json`) has a real, verified direct volunteer-page
-link instead — those cards say "Volunteer page →". Closing this gap at scale
-is gated on getting Idealist Open Network API access (see
+link instead — only those cards get a second "Volunteer page →" link.
+Closing this gap at scale (a real volunteer-page link for every org) is
+gated on getting Idealist Open Network API access (see
 RECOMMENDATIONS.md).
 
 ## Running this locally

@@ -10,7 +10,7 @@
     "state": "WA",
     "address": "600 1ST AVE",
     "website": "https://350seattle.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3A350seattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -24,7 +24,7 @@
     "state": "WA",
     "address": "1200 12TH S AVE STE 1101",
     "website": "https://www.501commons.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.501commons.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -38,7 +38,7 @@
     "state": "WA",
     "address": "1326 5TH AVE STE 735",
     "website": "https://www.5thavenue.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.5thavenue.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -52,7 +52,7 @@
     "state": "WA",
     "address": "700 UNION ST",
     "website": "https://www.acttheatre.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.acttheatre.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -66,7 +66,7 @@
     "state": "WA",
     "address": "4020 E MADISON ST STE 322",
     "website": "https://www.aldarrafoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.aldarrafoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -80,7 +80,7 @@
     "state": "WA",
     "address": "505 5TH AVE S STE 900",
     "website": "https://www.allenphilanthropies.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.allenphilanthropies.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -94,7 +94,7 @@
     "state": "WA",
     "address": "615 WESTLAKE AVE N",
     "website": "https://alleninstitute.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aalleninstitute.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -108,7 +108,7 @@
     "state": "WA",
     "address": "16030 JUANITA WOODINVILLE WAY NE",
     "website": "https://www.alphasls.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.alphasls.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -122,7 +122,7 @@
     "state": "WA",
     "address": "PO BOX 94001",
     "website": "https://www.animalaidunlimited.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.animalaidunlimited.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -136,7 +136,7 @@
     "state": "WA",
     "address": "1 100TH AVE NE STE 200",
     "website": "https://www.theapexfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.theapexfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -150,7 +150,7 @@
     "state": "WA",
     "address": "2300 ARBORETUM DR E",
     "website": "https://arboretumfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aarboretumfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -164,7 +164,7 @@
     "state": "WA",
     "address": "100 23RD AVE S",
     "website": "https://www.ccsww.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ccsww.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -178,7 +178,7 @@
     "state": "WA",
     "address": "PO BOX 19780",
     "website": "https://www.artsfund.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.artsfund.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -192,7 +192,7 @@
     "state": "WA",
     "address": "3639 MARTIN LUTHER KING JR WAY S",
     "website": "https://acrs.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aacrs.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -206,7 +206,7 @@
     "state": "WA",
     "address": "850 REPUBLICAN ST BLD C BOX 359110",
     "website": "https://www.uwmedicine.org/uw-physicians",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.uwmedicine.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -220,7 +220,7 @@
     "state": "WA",
     "address": "PO BOX 21669",
     "website": "https://www.seattlesymphony.org/benaroyahall",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlesymphony.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -234,7 +234,7 @@
     "state": "WA",
     "address": "14500 JUANITA DR NE",
     "website": "https://bastyr.edu",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Abastyr.edu%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -248,7 +248,7 @@
     "state": "WA",
     "address": "11 W ALOHA ST",
     "website": "https://bayviewseattle.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Abayviewseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -262,7 +262,7 @@
     "state": "WA",
     "address": "8905 208TH NE AVE",
     "website": "https://www.tbcs.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.tbcs.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -276,7 +276,7 @@
     "state": "WA",
     "address": "1201 9TH AVE",
     "website": "https://www.benaroyaresearch.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.benaroyaresearch.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -290,7 +290,7 @@
     "state": "WA",
     "address": "23929 22ND DR SE",
     "website": "https://bsfrf.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Absfrf.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -304,7 +304,7 @@
     "state": "WA",
     "address": "1700 7TH AVE STE 116 PMB 149",
     "website": "https://www.bezosfamilyfoundation.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.bezosfamilyfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -318,7 +318,7 @@
     "state": "WA",
     "address": "616 OLIVE WAY",
     "website": "https://birdsconnectsea.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Abirdsconnectsea.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -332,7 +332,7 @@
     "state": "WA",
     "address": "921 TERRY AVE",
     "website": "https://bloodworksnw.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Abloodworksnw.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -360,7 +360,7 @@
     "state": "WA",
     "address": "16000 CHRISTENSEN RD STE 250",
     "website": "https://positiveplace.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Apositiveplace.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -374,7 +374,7 @@
     "state": "WA",
     "address": "3908 42ND AVE S",
     "website": "https://bradburdfamilyfoundation.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Abradburdfamilyfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -388,7 +388,7 @@
     "state": "WA",
     "address": "PO BOX 563",
     "website": "https://www.breakthroughenergy.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.breakthroughenergy.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -402,7 +402,7 @@
     "state": "WA",
     "address": "PO BOX 563",
     "website": "https://www.breakthroughenergy.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.breakthroughenergy.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -416,7 +416,7 @@
     "state": "WA",
     "address": "PO BOX 563",
     "website": "https://www.breakthroughenergy.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.breakthroughenergy.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -430,7 +430,7 @@
     "state": "WA",
     "address": "555 S RENTON VILLAGE PL",
     "website": "https://www.brightspark.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.brightspark.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -444,7 +444,7 @@
     "state": "WA",
     "address": "3216 W BERTONA ST",
     "website": "https://www.buildingtransparency.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.buildingtransparency.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -458,7 +458,7 @@
     "state": "WA",
     "address": "3400 E HARRISON ST",
     "website": "https://www.bush.edu/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.bush.edu%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -472,7 +472,7 @@
     "state": "WA",
     "address": "7500 SEWARD PARK AVE S",
     "website": "https://www.klinegalland.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.klinegalland.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -486,7 +486,7 @@
     "state": "WA",
     "address": "316 BROADWAY",
     "website": "https://www.cascadepublicmedia.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.cascadepublicmedia.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -500,7 +500,7 @@
     "state": "WA",
     "address": "2001 8TH AVE STE 2700",
     "website": "https://www.casey.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.casey.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -514,7 +514,7 @@
     "state": "WA",
     "address": "100 23RD AVE S",
     "website": "https://ccsww.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Accsww.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -528,7 +528,7 @@
     "state": "WA",
     "address": "16300 REDMOND WAY STE 100",
     "website": "https://www.centroculturalmexicano.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.centroculturalmexicano.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -542,7 +542,7 @@
     "state": "WA",
     "address": "410 2ND AVENUE EXT S",
     "website": "https://www.chiefseattleclub.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.chiefseattleclub.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -556,7 +556,7 @@
     "state": "WA",
     "address": "12360 LAKE CITY WAY NE STE 450",
     "website": "https://www.akinfamily.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.akinfamily.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -584,7 +584,7 @@
     "state": "WA",
     "address": "1111 3RD AVE STE 400",
     "website": "https://www.chpw.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.chpw.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -598,7 +598,7 @@
     "state": "WA",
     "address": "19301 33RD AVE W",
     "website": "https://cvm.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Acvm.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -612,7 +612,7 @@
     "state": "WA",
     "address": "521 WALL STREETSUITE 100",
     "website": "https://www.cityu.edu",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.cityu.edu%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -626,7 +626,7 @@
     "state": "WA",
     "address": "363 MERCER STREET 200",
     "website": "https://www.classicalking.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.classicalking.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -640,7 +640,7 @@
     "state": "WA",
     "address": "509 OLIVE WAY STE 1133",
     "website": "https://cleanprosperousamerica.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Acleanprosperousamerica.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -654,7 +654,7 @@
     "state": "WA",
     "address": "509 OLIVE WAY STE 1133",
     "website": "https://capaeducation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Acapaeducation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -668,7 +668,7 @@
     "state": "WA",
     "address": "725 9TH AVE APT 2605",
     "website": "https://co2foundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aco2foundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -696,7 +696,7 @@
     "state": "WA",
     "address": "801 5TH AVE STE 2100",
     "website": "https://www.code.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.code.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -710,7 +710,7 @@
     "state": "WA",
     "address": "15500 SE 30TH PL STE 200",
     "website": "https://www.collegesuccessfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.collegesuccessfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -724,7 +724,7 @@
     "state": "WA",
     "address": "2815 2ND AVE STE 210",
     "website": "https://www.cfchildren.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.cfchildren.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -738,7 +738,7 @@
     "state": "WA",
     "address": "8609 EVERGREEN WAY",
     "website": "https://www.chcsno.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.chcsno.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -752,7 +752,7 @@
     "state": "WA",
     "address": "11000 LAKE CITY WAY NE",
     "website": "https://www.cpcwa.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.cpcwa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -766,7 +766,7 @@
     "state": "WA",
     "address": "220 DEXTER AVE N",
     "website": "https://www.compasshousingalliance.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.compasshousingalliance.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -780,7 +780,7 @@
     "state": "WA",
     "address": "1829 10TH AVENUE W SUITE B",
     "website": "https://www.conservationnw.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.conservationnw.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -794,7 +794,7 @@
     "state": "WA",
     "address": "1000 LENORA ST",
     "website": "https://www.cornish.edu",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.cornish.edu%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -808,7 +808,7 @@
     "state": "WA",
     "address": "409 MAYNARD AVE S STE 200",
     "website": "https://www.craft3.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.craft3.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -822,7 +822,7 @@
     "state": "WA",
     "address": "2901 3RD AVE STE 100",
     "website": "https://crisisconnections.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Acrisisconnections.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -836,7 +836,7 @@
     "state": "WA",
     "address": "1200 5TH AVE STE 1600",
     "website": "https://giuliani.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Agiuliani.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -850,7 +850,7 @@
     "state": "WA",
     "address": "3040 78TH AVENUE SE1042",
     "website": "https://www.bezosacademy.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.bezosacademy.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -864,7 +864,7 @@
     "state": "WA",
     "address": "1601 2ND AVE SUITE 200",
     "website": "https://downtownseattle.org/programs-services/metropolitan-improvement-district/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Adowntownseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -878,7 +878,7 @@
     "state": "WA",
     "address": "4408 DELRIDGE WAY SW",
     "website": "https://dnda.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Adnda.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -892,7 +892,7 @@
     "state": "WA",
     "address": "400 FAIRVIEW AVE N STE 800",
     "website": "https://www.deltadentalwa.com/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.deltadentalwa.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -906,7 +906,7 @@
     "state": "WA",
     "address": "515 3RD AVE",
     "website": "https://www.desc.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.desc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -920,7 +920,7 @@
     "state": "WA",
     "address": "7400 3RD AVE S",
     "website": "https://www.drcc.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.drcc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -934,7 +934,7 @@
     "state": "WA",
     "address": "10613 NE 38TH PL",
     "website": "https://www.eastsideprep.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.eastsideprep.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -948,7 +948,7 @@
     "state": "WA",
     "address": "10901 176TH CIR NE",
     "website": "https://www.emeraldheights.com/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.emeraldheights.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -962,7 +962,7 @@
     "state": "WA",
     "address": "2524 16TH AVE S",
     "website": "https://www.elcentrodelaraza.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.elcentrodelaraza.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -976,7 +976,7 @@
     "state": "WA",
     "address": "20 S IDAHO ST",
     "website": "https://www.emeraldcitypetrescue.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.emeraldcitypetrescue.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -990,7 +990,7 @@
     "state": "WA",
     "address": "3611 E DENNY WAY",
     "website": "https://www.epiphanyschool.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.epiphanyschool.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1004,7 +1004,7 @@
     "state": "WA",
     "address": "23632 HWY 99 F PMB 446",
     "website": "https://eoschools.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aeoschools.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1018,7 +1018,7 @@
     "state": "WA",
     "address": "100 W HARRISON ST STE S560",
     "website": "https://marexps.com/emergency-response-system-towing-vessel/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Amarexps.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1032,7 +1032,7 @@
     "state": "WA",
     "address": "2701 BEL RED RD",
     "website": "https://www.etonschool.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.etonschool.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1046,7 +1046,7 @@
     "state": "WA",
     "address": "15201 MERIDIAN AVE N",
     "website": "https://www.evergreenschool.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.evergreenschool.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1060,7 +1060,7 @@
     "state": "WA",
     "address": "1700 AIRPORT WAY S",
     "website": "https://www.evergreentreatment.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.evergreentreatment.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1074,7 +1074,7 @@
     "state": "WA",
     "address": "210 S HUDSON ST STE 310",
     "website": "https://www.excellentschoolswa.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.excellentschoolswa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1088,7 +1088,7 @@
     "state": "WA",
     "address": "120 6TH AVE N STE 100",
     "website": "https://www.mopop.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.mopop.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1102,7 +1102,7 @@
     "state": "WA",
     "address": "1000 SECOND AVE 34TH FLOOR",
     "website": "https://farstaractionfund.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Afarstaractionfund.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1116,7 +1116,7 @@
     "state": "WA",
     "address": "117 E LOUISA ST 376",
     "website": "https://feelgoodaction.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Afeelgoodaction.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1130,7 +1130,7 @@
     "state": "WA",
     "address": "815 S 96TH ST",
     "website": "https://foodlifeline.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Afoodlifeline.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1144,7 +1144,7 @@
     "state": "WA",
     "address": "5101 14TH AVE NW STE 200 # 307",
     "website": "https://forterra.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aforterra.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1158,7 +1158,7 @@
     "state": "WA",
     "address": "2121 TERRY AVENUE 1701",
     "website": "https://loveology.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aloveology.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1172,7 +1172,7 @@
     "state": "WA",
     "address": "1100 FAIRVIEW AVE N",
     "website": "https://www.fredhutch.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.fredhutch.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1186,7 +1186,7 @@
     "state": "WA",
     "address": "1100 FAIRVIEW AVE N",
     "website": "https://www.fredhutch.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.fredhutch.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1200,7 +1200,7 @@
     "state": "WA",
     "address": "3795 E MERCER WAY",
     "website": "https://www.fasps.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.fasps.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1214,7 +1214,7 @@
     "state": "WA",
     "address": "472 1ST N AVE",
     "website": "https://www.kexp.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.kexp.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1228,7 +1228,7 @@
     "state": "WA",
     "address": "1201 ALASKAN WAY STE 200",
     "website": "https://waterfrontparkseattle.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awaterfrontparkseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1242,7 +1242,7 @@
     "state": "WA",
     "address": "2800 1ST AVE STE 201",
     "website": "https://frontandcentered.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Afrontandcentered.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1256,7 +1256,7 @@
     "state": "WA",
     "address": "1980 112TH AVE NE STE 210",
     "website": "https://fulllifecare.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Afulllifecare.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1270,7 +1270,7 @@
     "state": "WA",
     "address": "2107 WESTLAKE AVE",
     "website": "https://gageacademy.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Agageacademy.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1284,7 +1284,7 @@
     "state": "WA",
     "address": "500 5TH AVE N",
     "website": "https://www.gatesfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.gatesfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1298,7 +1298,7 @@
     "state": "WA",
     "address": "2365 CARILLON PT",
     "website": "https://www.gatesfoundation.org/about/financials/foundation-trust",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.gatesfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1312,7 +1312,7 @@
     "state": "WA",
     "address": "PO BOX 23350",
     "website": "https://www.gatesphilanthropypartners.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.gatesphilanthropypartners.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1326,7 +1326,7 @@
     "state": "WA",
     "address": "400 E PINE ST STE 100",
     "website": "https://www.gaycity.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.gaycity.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1340,7 +1340,7 @@
     "state": "WA",
     "address": "5601 6TH S AVE STE 150",
     "website": "https://www.girlscoutsww.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.girlscoutsww.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1354,7 +1354,7 @@
     "state": "WA",
     "address": "14360 SE EASTGATE WAY",
     "website": "https://www.ghlabs.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ghlabs.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1368,7 +1368,7 @@
     "state": "WA",
     "address": "301 UNION ST UNIT 21308",
     "website": "https://greatergood.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Agreatergood.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1382,7 +1382,7 @@
     "state": "WA",
     "address": "1601 5TH AVENUE 9TH FLOOR",
     "website": "https://grist.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Agrist.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1396,7 +1396,7 @@
     "state": "WA",
     "address": "1701 20TH AVE S",
     "website": "https://www.hamlinrobinson.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.hamlinrobinson.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1410,7 +1410,7 @@
     "state": "WA",
     "address": "17035 W VALLEY HWY",
     "website": "https://www.harnishfoundation.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.harnishfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1424,7 +1424,7 @@
     "state": "WA",
     "address": "2001 8TH AVE STE 1400",
     "website": "https://www.healthierhere.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.healthierhere.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1438,7 +1438,7 @@
     "state": "WA",
     "address": "955 POWELL AVE SW",
     "website": "https://www.healthpointchc.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.healthpointchc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1452,7 +1452,7 @@
     "state": "WA",
     "address": "15TH AVE NE NE 41ST ST",
     "website": "https://henryart.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Ahenryart.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1466,7 +1466,7 @@
     "state": "WA",
     "address": "16251 SYLVESTER RD SW",
     "website": "https://www.vmfh.org/our-hospitals/st-anne-hospital",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.vmfh.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1480,7 +1480,7 @@
     "state": "WA",
     "address": "PO BOX 80816",
     "website": "https://www.mohai.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.mohai.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1494,7 +1494,7 @@
     "state": "WA",
     "address": "13132 NE 177TH PL",
     "website": "https://www.homewardpet.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.homewardpet.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1508,7 +1508,7 @@
     "state": "WA",
     "address": "PO BOX 3577",
     "website": "https://www.hopelink.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.hopelink.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1522,7 +1522,7 @@
     "state": "WA",
     "address": "900 UNIVERSITY STREET",
     "website": "https://horizonhouse.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Ahorizonhouse.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1536,7 +1536,7 @@
     "state": "WA",
     "address": "13212 SE EASTGATE WAY",
     "website": "https://www.seattlehumane.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlehumane.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1550,7 +1550,7 @@
     "state": "WA",
     "address": "1502 WALL ST",
     "website": "https://www.imaginecm.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.imaginecm.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1564,7 +1564,7 @@
     "state": "WA",
     "address": "3438 S 148TH ST",
     "website": "https://www.impactps.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.impactps.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1578,7 +1578,7 @@
     "state": "WA",
     "address": "1301 5TH AVE STE 2600",
     "website": "https://inatai.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Ainatai.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1592,7 +1592,7 @@
     "state": "WA",
     "address": "PO BOX 404",
     "website": "https://iacswa.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aiacswa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1606,7 +1606,7 @@
     "state": "WA",
     "address": "600 1ST AVE STE 330 # 74985",
     "website": "https://responsiblemining.net/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aresponsiblemining.net%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1620,7 +1620,7 @@
     "state": "WA",
     "address": "401 TERRY AVE N",
     "website": "https://isbscience.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aisbscience.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1634,7 +1634,7 @@
     "state": "WA",
     "address": "PO BOX 3007",
     "website": "https://www.ichs.com/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ichs.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1648,7 +1648,7 @@
     "state": "WA",
     "address": "2320 W COMMODORE WAY STE 300",
     "website": "https://www.iphc.int/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.iphc.int%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1662,7 +1662,7 @@
     "state": "WA",
     "address": "1601 16TH AVE",
     "website": "https://www.jfsseattle.org/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.jfsseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1676,7 +1676,7 @@
     "state": "WA",
     "address": "1300 SW 27TH ST",
     "website": "https://healthy.kaiserpermanente.org/washington",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Ahealthy.kaiserpermanente.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1690,7 +1690,7 @@
     "state": "WA",
     "address": "PO BOX 447",
     "website": "https://www.k-b-f.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.k-b-f.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1704,7 +1704,7 @@
     "state": "WA",
     "address": "129 LAKE AVE W",
     "website": "https://khakifoundation.com",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Akhakifoundation.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1718,7 +1718,7 @@
     "state": "WA",
     "address": "1116 108TH NE AVE",
     "website": "https://kidsquestmuseum.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Akidsquestmuseum.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1732,7 +1732,7 @@
     "state": "WA",
     "address": "350 KIRKLAND AVE",
     "website": "https://kpcenter.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Akpcenter.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1746,7 +1746,7 @@
     "state": "WA",
     "address": "4518 UNIVERSITY WAY NE STE 310",
     "website": "https://kuow.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Akuow.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1760,7 +1760,7 @@
     "state": "WA",
     "address": "14050 1ST AVE NE",
     "website": "https://www.lakesideschool.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.lakesideschool.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1774,7 +1774,7 @@
     "state": "WA",
     "address": "6011 CALIFORNIA AVE SW STE 100A",
     "website": "https://leadingharvest.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aleadingharvest.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1788,7 +1788,7 @@
     "state": "WA",
     "address": "500 UNION ST",
     "website": "https://legalfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Alegalfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1802,7 +1802,7 @@
     "state": "WA",
     "address": "3650 131ST AVE SE STE 200",
     "website": "https://www.lcnw.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.lcnw.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1816,7 +1816,7 @@
     "state": "WA",
     "address": "4634 E MARGINAL WAY S STE C200",
     "website": "https://www.lifelong.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.lifelong.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1830,7 +1830,7 @@
     "state": "WA",
     "address": "2125 WESTERN AVE STE 300",
     "website": "https://lltk.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Alltk.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1844,7 +1844,7 @@
     "state": "WA",
     "address": "6720 E GREEN LAKE WAY N",
     "website": "https://hearthstone.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Ahearthstone.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1872,7 +1872,7 @@
     "state": "WA",
     "address": "301 UNION ST UNIT 2045",
     "website": "https://caseygrants.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Acaseygrants.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1886,7 +1886,7 @@
     "state": "WA",
     "address": "6720 FORT DENT WAY STE 110",
     "website": "https://www.msc.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.msc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1900,7 +1900,7 @@
     "state": "WA",
     "address": "PO BOX 1711",
     "website": "https://marysplaceseattle.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Amarysplaceseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1914,7 +1914,7 @@
     "state": "WA",
     "address": "1416 NW 46TH ST STE 105 PMB 146",
     "website": "https://themaxfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Athemaxfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1928,7 +1928,7 @@
     "state": "WA",
     "address": "7400 SAND POINT WAY NE SUITE 202",
     "website": "https://midsoundfisheries.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Amidsoundfisheries.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1942,7 +1942,7 @@
     "state": "WA",
     "address": "12011 NE BEL RED RD STE 100B",
     "website": "https://www.momsrising.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.momsrising.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1956,7 +1956,7 @@
     "state": "WA",
     "address": "2033 6TH AVE STE 252",
     "website": "https://montlakefutures.com",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Amontlakefutures.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1970,7 +1970,7 @@
     "state": "WA",
     "address": "9404 E MARGINAL WAY S",
     "website": "https://www.museumofflight.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.museumofflight.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1984,7 +1984,7 @@
     "state": "WA",
     "address": "2655 NW MARKET ST",
     "website": "https://www.nordicmuseum.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.nordicmuseum.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -1998,7 +1998,7 @@
     "state": "WA",
     "address": "4210 198TH ST SW STE 208",
     "website": "https://www.nuifc.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.nuifc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2012,7 +2012,7 @@
     "state": "WA",
     "address": "PO BOX 46420",
     "website": "https://www.multicare.org/services/mental-behavioral-health/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.multicare.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2026,7 +2026,7 @@
     "state": "WA",
     "address": "1200 12TH AVE S STE 901",
     "website": "https://www.neighborcare.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.neighborcare.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2040,7 +2040,7 @@
     "state": "WA",
     "address": "1225 S WELLER ST STE 510",
     "website": "https://www.nhwa.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.nhwa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2054,7 +2054,7 @@
     "state": "WA",
     "address": "900 E PINE ST STE 200",
     "website": "https://www.niatero.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.niatero.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2068,7 +2068,7 @@
     "state": "WA",
     "address": "12911 39TH AVE SE",
     "website": "https://www.am-hs.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.am-hs.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2082,7 +2082,7 @@
     "state": "WA",
     "address": "401 2ND AVE S STE 407",
     "website": "https://nwjustice.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Anwjustice.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2096,7 +2096,7 @@
     "state": "WA",
     "address": "12901 20TH AVE S",
     "website": "https://www.nwkidney.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.nwkidney.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2110,7 +2110,7 @@
     "state": "WA",
     "address": "11724 NE 195TH ST STE 300",
     "website": "https://www.oetraining.com",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.oetraining.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2124,7 +2124,7 @@
     "state": "WA",
     "address": "1035 116TH AVE NE",
     "website": "https://www.overlakehospital.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.overlakehospital.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2138,7 +2138,7 @@
     "state": "WA",
     "address": "20301 NE 108TH ST",
     "website": "https://www.overlake.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.overlake.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2152,7 +2152,7 @@
     "state": "WA",
     "address": "301 MERCER ST",
     "website": "https://www.pnb.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pnb.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2166,7 +2166,7 @@
     "state": "WA",
     "address": "301 MERCER ST",
     "website": "https://www.pnb.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pnb.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2180,7 +2180,7 @@
     "state": "WA",
     "address": "200 2ND AVENUE NORTH",
     "website": "https://www.pacificsciencecenter.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pacificsciencecenter.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2194,7 +2194,7 @@
     "state": "WA",
     "address": "1801 LIND AVE SW ATTN TAX DEPT",
     "website": "https://www.pacificmedicalcenters.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pacificmedicalcenters.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2208,7 +2208,7 @@
     "state": "WA",
     "address": "200 MERCER ST",
     "website": "https://pathwithart.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Apathwithart.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2222,7 +2222,7 @@
     "state": "WA",
     "address": "450 ALASKAN WAY S STE 200",
     "website": "https://pccfarmlandtrust.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Apccfarmlandtrust.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2236,7 +2236,7 @@
     "state": "WA",
     "address": "240 2ND AVE S STE 100",
     "website": "https://pilchuck.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Apilchuck.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2250,7 +2250,7 @@
     "state": "WA",
     "address": "7440 W MARGINAL WAY S",
     "website": "https://pioneerhumanservices.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Apioneerhumanservices.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2264,7 +2264,7 @@
     "state": "WA",
     "address": "12335 134TH CT NE",
     "website": "https://www.pivotalventures.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2278,7 +2278,7 @@
     "state": "WA",
     "address": "12335 134TH CT NE",
     "website": "https://www.pivotalventures.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2292,7 +2292,7 @@
     "state": "WA",
     "address": "12335 134TH CT NE",
     "website": "https://www.pivotalventures.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2306,7 +2306,7 @@
     "state": "WA",
     "address": "12335 134TH CT NE",
     "website": "https://www.pivotalventures.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2320,7 +2320,7 @@
     "state": "WA",
     "address": "2001 E MADISON ST",
     "website": "https://www.ppgnhaik.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ppgnhaik.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2334,7 +2334,7 @@
     "state": "WA",
     "address": "2113 3RD AVE",
     "website": "https://www.plymouthhousing.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.plymouthhousing.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2348,7 +2348,7 @@
     "state": "WA",
     "address": "1902 S MAIN ST",
     "website": "https://www.pratt.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pratt.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2362,7 +2362,7 @@
     "state": "WA",
     "address": "11980 112TH AVE STE 210",
     "website": "https://www.transformingage.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.transformingage.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2376,7 +2376,7 @@
     "state": "WA",
     "address": "15305 44TH AVE W",
     "website": "https://www.paws.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.paws.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2390,7 +2390,7 @@
     "state": "WA",
     "address": "12550 AURORA AVE N",
     "website": "https://provail.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aprovail.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2404,7 +2404,7 @@
     "state": "WA",
     "address": "1801 LIND AVE SW ATTN TAX DEPT",
     "website": "https://www.providence.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.providence.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2418,7 +2418,7 @@
     "state": "WA",
     "address": "550 SW 7TH ST",
     "website": "https://www.psejatc.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.psejatc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2432,7 +2432,7 @@
     "state": "WA",
     "address": "1019 PACIFIC AVE",
     "website": "https://www.pskc.net",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pskc.net%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2446,7 +2446,7 @@
     "state": "WA",
     "address": "149 PARK AVE N UNIT A",
     "website": "https://gopsrs.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Agopsrs.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2460,7 +2460,7 @@
     "state": "WA",
     "address": "110 PREFONTAINE PL S502",
     "website": "https://wearepda.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awearepda.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2474,7 +2474,7 @@
     "state": "WA",
     "address": "2157 N NORTHLAKE WAY STE 220",
     "website": "https://www.raikesfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.raikesfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2488,7 +2488,7 @@
     "state": "WA",
     "address": "2100 24TH AVE S STE 360",
     "website": "https://www.rainierscholars.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.rainierscholars.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2502,7 +2502,7 @@
     "state": "WA",
     "address": "568 1ST AVE S STE 600",
     "website": "https://realnetworks.com/realnetworks-foundation",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Arealnetworks.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2516,7 +2516,7 @@
     "state": "WA",
     "address": "4008 MLK JR WAY",
     "website": "https://www.rewa.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.rewa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2530,7 +2530,7 @@
     "state": "WA",
     "address": "7107 GREENWOOD AVE N STE A",
     "website": "https://www.rootswings.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.rootswings.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2544,7 +2544,7 @@
     "state": "WA",
     "address": "3715 S HUDSON ST STE 103",
     "website": "https://rvcseattle.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Arvcseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2558,7 +2558,7 @@
     "state": "WA",
     "address": "2901 3RD AVE STE 330",
     "website": "https://sagebionetworks.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Asagebionetworks.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2572,7 +2572,7 @@
     "state": "WA",
     "address": "208 JAMES ST STE C",
     "website": "https://samisfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Asamisfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2586,7 +2586,7 @@
     "state": "WA",
     "address": "3801 E MERCER WAY",
     "website": "https://www.sjcc.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.sjcc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2600,7 +2600,7 @@
     "state": "WA",
     "address": "1904 3RD AVE STE 825",
     "website": "https://satterberg.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Asatterberg.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2614,7 +2614,7 @@
     "state": "WA",
     "address": "300 LENORA ST PMB 1750",
     "website": "https://www.scholarfundwa.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.scholarfundwa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2628,7 +2628,7 @@
     "state": "WA",
     "address": "1329 N 47TH ST UNIT 31817",
     "website": "http://schultzfamilyfoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aschultzfamilyfoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2642,7 +2642,7 @@
     "state": "WA",
     "address": "1040 S HENDERSON ST",
     "website": "https://www.seamar.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seamar.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2656,7 +2656,7 @@
     "state": "WA",
     "address": "1483 ALASKAN WAY PIER 59",
     "website": "https://www.seattleaquarium.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattleaquarium.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2670,7 +2670,7 @@
     "state": "WA",
     "address": "1300 1ST AVE",
     "website": "https://www.seattleartmuseum.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattleartmuseum.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2684,7 +2684,7 @@
     "state": "WA",
     "address": "340 15TH AVE E STE 301",
     "website": "https://lectures.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Alectures.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2698,7 +2698,7 @@
     "state": "WA",
     "address": "601 UNION ST STE 220",
     "website": "https://www.seattlechambermusic.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlechambermusic.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2712,7 +2712,7 @@
     "state": "WA",
     "address": "PO BOX 5371 MSC 818-FI",
     "website": "https://www.seattlechildrens.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlechildrens.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2726,7 +2726,7 @@
     "state": "WA",
     "address": "PO BOX 5371 MSC 818-FI",
     "website": "https://www.seattlechildrens.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlechildrens.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2740,7 +2740,7 @@
     "state": "WA",
     "address": "2619 4TH AVE N",
     "website": "https://www.seattlecountryday.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlecountryday.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2754,7 +2754,7 @@
     "state": "WA",
     "address": "611 12TH AVE S",
     "website": "https://www.sihb.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.sihb.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2768,7 +2768,7 @@
     "state": "WA",
     "address": "220 2ND AVE S",
     "website": "https://www.seattlefwc26.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlefwc26.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2782,7 +2782,7 @@
     "state": "WA",
     "address": "363 MERCER ST",
     "website": "https://www.seattleopera.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattleopera.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2796,7 +2796,7 @@
     "state": "WA",
     "address": "3307 3RD AVE W",
     "website": "https://www.spu.edu",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.spu.edu%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2810,7 +2810,7 @@
     "state": "WA",
     "address": "1000 4TH AVE",
     "website": "https://www.supportspl.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.supportspl.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2824,7 +2824,7 @@
     "state": "WA",
     "address": "PO BOX 900923",
     "website": "https://www.seattlerep.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlerep.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2838,7 +2838,7 @@
     "state": "WA",
     "address": "500 19TH AVE E",
     "website": "https://seattleroots.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aseattleroots.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2852,7 +2852,7 @@
     "state": "WA",
     "address": "PO BOX 21906",
     "website": "https://www.seattlesymphony.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlesymphony.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2866,7 +2866,7 @@
     "state": "WA",
     "address": "PO BOX 21906",
     "website": "https://www.seattlesymphony.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlesymphony.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2880,7 +2880,7 @@
     "state": "WA",
     "address": "911 PINE ST",
     "website": "https://www.stgpresents.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.stgpresents.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2894,7 +2894,7 @@
     "state": "WA",
     "address": "PO BOX 4605",
     "website": "https://www.seakingwdc.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seakingwdc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2908,7 +2908,7 @@
     "state": "WA",
     "address": "215 COLUMBIA STREET SUITE 300",
     "website": "https://seiu775benefitsgroup.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aseiu775benefitsgroup.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2922,7 +2922,7 @@
     "state": "WA",
     "address": "215 COLUMBIA ST STE 300",
     "website": "https://www.healthcareerfund.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.healthcareerfund.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2936,7 +2936,7 @@
     "state": "WA",
     "address": "815 SEATTLE BLVD S 215",
     "website": "https://shunpike.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Ashunpike.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2950,7 +2950,7 @@
     "state": "WA",
     "address": "14326 124TH AVE NE",
     "website": "https://www.snokingicearenas.com",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.snokingicearenas.com%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2964,7 +2964,7 @@
     "state": "WA",
     "address": "2722 COLBY AVE STE 200",
     "website": "https://www.snocopda.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.snocopda.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2978,7 +2978,7 @@
     "state": "WA",
     "address": "808 134TH ST SW STE 105",
     "website": "https://www.workforcesnohomish.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.workforcesnohomish.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -2992,7 +2992,7 @@
     "state": "WA",
     "address": "1501 N 45TH ST",
     "website": "https://www.solid-ground.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.solid-ground.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3006,7 +3006,7 @@
     "state": "WA",
     "address": "1225 S WELLER ST STE 200",
     "website": "https://www.soundchild.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.soundchild.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3020,7 +3020,7 @@
     "state": "WA",
     "address": "2208 2ND AVE STE 100",
     "website": "https://soundgenerations.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Asoundgenerations.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3034,7 +3034,7 @@
     "state": "WA",
     "address": "7511 GREENWOOD AVE NORTH UNIT 4203",
     "website": "https://splash.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Asplash.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3048,7 +3048,7 @@
     "state": "WA",
     "address": "1801 LIND AVE SW ATTN TAX DEPT",
     "website": "https://www.providence.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.providence.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3062,7 +3062,7 @@
     "state": "WA",
     "address": "1025 S KING ST",
     "website": "https://summitps.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Asummitps.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3076,7 +3076,7 @@
     "state": "WA",
     "address": "PO BOX 389672",
     "website": "https://www.swedish.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.swedish.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3090,7 +3090,7 @@
     "state": "WA",
     "address": "1801 LIND AVE SW ATTN TAX DEPT",
     "website": "https://www.swedish.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.swedish.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3104,7 +3104,7 @@
     "state": "WA",
     "address": "747 BROADWAY",
     "website": "https://www.swedish.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.swedish.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3118,7 +3118,7 @@
     "state": "WA",
     "address": "204 N 85TH ST",
     "website": "https://www.taproottheatre.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.taproottheatre.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3132,7 +3132,7 @@
     "state": "WA",
     "address": "3800 LATONA AVE NE STE 300",
     "website": "https://allenai.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aallenai.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3146,7 +3146,7 @@
     "state": "WA",
     "address": "4500 SAND POINT WAY NE STE 100",
     "website": "https://www.seattlechildrens.org/healthcare-professionals/medical-affairs/cumg/",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlechildrens.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3160,7 +3160,7 @@
     "state": "WA",
     "address": "2227 10TH AVE E",
     "website": "https://www.bertschi.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.bertschi.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3174,7 +3174,7 @@
     "state": "WA",
     "address": "4649 SUNNYSIDE AVE N STE 325",
     "website": "https://www.snowleopard.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.snowleopard.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3188,7 +3188,7 @@
     "state": "WA",
     "address": "7700 SAND POINT WAY NE",
     "website": "https://www.mountaineers.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.mountaineers.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3202,7 +3202,7 @@
     "state": "WA",
     "address": "2701 1ST AVE STE 240",
     "website": "https://www.mtsgreenway.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.mtsgreenway.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3216,7 +3216,7 @@
     "state": "WA",
     "address": "1415 SUMMIT AVE",
     "website": "https://www.northwestschool.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.northwestschool.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3230,7 +3230,7 @@
     "state": "WA",
     "address": "1201 E UNION ST",
     "website": "https://www.seattleacademy.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattleacademy.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3244,7 +3244,7 @@
     "state": "WA",
     "address": "1601 5TH AVE STE 1900",
     "website": "https://www.seattlefoundation.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlefoundation.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3258,7 +3258,7 @@
     "state": "WA",
     "address": "909 4TH AVE",
     "website": "https://www.seattleymca.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattleymca.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3272,7 +3272,7 @@
     "state": "WA",
     "address": "1116 SUMMIT AVE",
     "website": "https://ths-wa.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Aths-wa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3286,7 +3286,7 @@
     "state": "WA",
     "address": "4649 SUNNYSIDE AVE N STE 100",
     "website": "https://tilthalliance.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Atilthalliance.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3300,7 +3300,7 @@
     "state": "WA",
     "address": "720 SENECA ST STE A",
     "website": "https://townhallseattle.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Atownhallseattle.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3314,7 +3314,7 @@
     "state": "WA",
     "address": "4649 SUNNYSIDE AVE N STE 540",
     "website": "https://toxicfreefuture.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Atoxicfreefuture.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3328,7 +3328,7 @@
     "state": "WA",
     "address": "2100 24TH S AVE STE 200",
     "website": "https://www.treehouseforkids.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.treehouseforkids.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3342,7 +3342,7 @@
     "state": "WA",
     "address": "720 2ND AVE",
     "website": "https://www.uwkc.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.uwkc.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3356,7 +3356,7 @@
     "state": "WA",
     "address": "5062 9TH AVE NE",
     "website": "https://www.ucds.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ucds.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3370,7 +3370,7 @@
     "state": "WA",
     "address": "400 GERBERDING HALL",
     "website": "https://www.washington.edu/giving",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.washington.edu%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3384,7 +3384,7 @@
     "state": "WA",
     "address": "8000 25TH AVE NE",
     "website": "https://www.universityprep.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.universityprep.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3398,7 +3398,7 @@
     "state": "WA",
     "address": "816 CENTRAL AVE N",
     "website": "https://www.unkitawa.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.unkitawa.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3412,7 +3412,7 @@
     "state": "WA",
     "address": "325 W GOWE ST",
     "website": "https://www.valleycities.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.valleycities.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3426,7 +3426,7 @@
     "state": "WA",
     "address": "5001 NE 50TH ST",
     "website": "https://www.thevilla.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.thevilla.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3440,7 +3440,7 @@
     "state": "WA",
     "address": "303 FRONT ST N",
     "website": "https://villagetheatre.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Avillagetheatre.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3454,7 +3454,7 @@
     "state": "WA",
     "address": "210 S HUDSON ST STE 307",
     "website": "https://www.villagereach.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.villagereach.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3468,7 +3468,7 @@
     "state": "WA",
     "address": "1100 9TH AVE",
     "website": "https://www.virginiamason.org/seattle",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.virginiamason.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3496,7 +3496,7 @@
     "state": "WA",
     "address": "1417 4TH AVE STE 800",
     "website": "https://wcactionef.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awcactionef.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3510,7 +3510,7 @@
     "state": "WA",
     "address": "701 PIKE ST STE 1900",
     "website": "https://www.wacbd.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.wacbd.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3524,7 +3524,7 @@
     "state": "WA",
     "address": "1900 W NICKERSON ST STE 301",
     "website": "https://maritimeblue.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Amaritimeblue.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3538,7 +3538,7 @@
     "state": "WA",
     "address": "1500 WESTLAKE AVE N STE 202",
     "website": "https://www.washingtonwatertrust.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.washingtonwatertrust.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3552,7 +3552,7 @@
     "state": "WA",
     "address": "1211 E DENNY WAY 45B",
     "website": "https://www.washingtonfilmworks.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.washingtonfilmworks.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3566,7 +3566,7 @@
     "state": "WA",
     "address": "10404 34TH AVE SW",
     "website": "https://www.westsideschool.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.westsideschool.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3580,7 +3580,7 @@
     "state": "WA",
     "address": "2034 NW 56TH ST STE 300",
     "website": "https://www.wilburforce.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.wilburforce.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3594,7 +3594,7 @@
     "state": "WA",
     "address": "19102 NORTH CREEK PKWY STE 100",
     "website": "https://www.woodinvillemontessori.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.woodinvillemontessori.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3608,7 +3608,7 @@
     "state": "WA",
     "address": "5500 PHINNEY AVE N",
     "website": "https://www.zoo.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.zoo.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3622,7 +3622,7 @@
     "state": "WA",
     "address": "375 118TH AVE SE STE 102C",
     "website": "https://www.apprenticareers.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.apprenticareers.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3636,7 +3636,7 @@
     "state": "WA",
     "address": "1118 5TH AVE",
     "website": "https://www.ywcaworks.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ywcaworks.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   },
   {
@@ -3650,7 +3650,7 @@
     "state": "WA",
     "address": "5316 114TH ST SE",
     "website": "https://www.youthcare.org",
-    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.youthcare.org%20volunteer",
+    "volunteerUrl": null,
     "source": "propublica"
   }
 ]

@@ -7,7 +7,6 @@ interface OrgCardProps {
 }
 
 export function OrgCard({ org }: OrgCardProps) {
-  const hasVerifiedLink = org.source === 'curated';
   const CauseIcon = CAUSE_ICONS[org.causeBundle];
 
   return (
@@ -25,7 +24,7 @@ export function OrgCard({ org }: OrgCardProps) {
         {org.website && <CardLink href={org.website}>Visit website</CardLink>}
         {org.volunteerUrl && (
           <CardLink href={org.volunteerUrl} primary>
-            {hasVerifiedLink ? 'Volunteer page' : 'Search for their volunteer page'}
+            Volunteer page
           </CardLink>
         )}
       </div>

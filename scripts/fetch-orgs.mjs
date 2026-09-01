@@ -113,25 +113,6 @@ function causeBundleFor(nteeCode) {
   return NTEE_LETTER_TO_BUNDLE[letter] ?? 'Other';
 }
 
-function volunteerSearchUrl(name, city) {
-  const q = encodeURIComponent(`${name} ${city} WA volunteer opportunities`);
-  return `https://www.google.com/search?q=${q}`;
-}
-
-// Once we know an org's real website (see verified-websites.json), scope
-// the fallback search to that domain — much more likely to surface their
-// actual volunteer page than a generic name+city search.
-function siteScopedVolunteerSearchUrl(website) {
-  let host;
-  try {
-    host = new URL(website).hostname;
-  } catch {
-    return null;
-  }
-  const q = encodeURIComponent(`site:${host} volunteer`);
-  return `https://www.google.com/search?q=${q}`;
-}
-
 async function fetchJson(url) {
   const res = await fetch(url, {
     headers: { 'User-Agent': 'nonprofit-match-finder-pilot (contact: repo owner via GitHub)' },
@@ -215,7 +196,12 @@ async function fetchProPublicaOrgs(verifiedWebsites) {
       state: org.state,
       address,
       website: verifiedWebsite,
-      volunteerUrl: siteScopedVolunteerSearchUrl(verifiedWebsite) ?? volunteerSearchUrl(org.name, org.city),
+      // No constructed Google-search fallback — a search link that just
+      // reroutes to Google isn't a real, actionable listing. Only the
+      // hand-curated orgs (which supply a real, verified volunteer-page
+      // URL directly in curated-orgs.json) get a volunteer-page link at
+      // all; everyone else just gets the verified website link above.
+      volunteerUrl: null,
       source: 'propublica',
     });
   }
