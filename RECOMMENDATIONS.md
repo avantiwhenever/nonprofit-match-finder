@@ -1,6 +1,8 @@
 # Recommendations & Project Status
 
-Last updated: 2026-08-27
+Last updated: 2026-08-31. See [`SESSION_LOG.md`](./SESSION_LOG.md) for a
+chronological, session-by-session record of changes; this doc stays a
+point-in-time status/roadmap summary rather than a full history.
 
 ## Project summary
 
@@ -26,7 +28,7 @@ website first (no native app yet).
 
 | Piece | Recommendation | Why |
 |---|---|---|
-| Frontend | React (Vite), hosted on Vercel free tier (or GitHub Pages) | Reusable later via React Native/Capacitor for iOS/Android; Vercel adds free serverless functions for when a backend is needed, without a platform migration |
+| Frontend | React (Vite), **deployed and live on GitHub Pages** (`.github/workflows/deploy-pages.yml`, deploys on every push to `main`) | Reusable later via React Native/Capacitor for iOS/Android. GitHub Pages was chosen over Vercel specifically so the repo could stay under `gh` CLI control end-to-end with no external account/login — the tradeoff is GitHub Pages requires the repo to be public on the free plan, so the repo was made public (see "v0 status" below) |
 | Backend | None initially. When needed: Cloudflare Workers or Vercel Functions (free tier) | A JVM backend (Spring Boot) needs ~300-500MB RAM and has slow cold starts on free hosting tiers (30-60s after idle sleep) — not worth it at this scale yet |
 | Search | Static JSON index + client-side search (Fuse.js) | No live query endpoint means nothing for bots to hammer or rate-limit; doubles as the "flat file that can move to a real index later" |
 | Scraper / data refresh | GitHub Actions scheduled workflow (free cron), pulling from open APIs only | Free at this volume; use official APIs (Idealist Open Network API, ProPublica Nonprofit Explorer API, Data.gov) — do not scrape sites like Indeed/LinkedIn whose ToS forbid it |
@@ -36,6 +38,8 @@ website first (no native app yet).
 | Maps | Leaflet.js + OpenStreetMap tiles | Free, no API key, no billing account required (unlike Google Maps) |
 | Containerization | Docker for whatever backend eventually exists | Costs nothing, keeps the option to move off free tier portable |
 | Certificates | **Deferred, not in v0** — same as user data above. When needed: serverless function generates a PDF once a nonprofit confirms hours | No extra service needed |
+| Repo/dependency security | GitHub's free-for-public-repos suite: secret scanning + push protection, Dependabot security updates, weekly CodeQL scan (`.github/workflows/codeql.yml`, `.github/dependabot.yml`) | Zero cost, zero extra service, appropriate now that the repo is public (see "v0 status"); details in `SECURITY.md` |
+| Visit counter | Free public counter API (`abacus.jasoncameron.dev`), called client-side from the footer | The only "tracking" in the app, and it's a single anonymous hit count, not per-user — matches the "no accounts/no tracking" decision below while still surfacing basic traffic |
 
 ## Roadmap (add when workload justifies it)
 
@@ -48,11 +52,25 @@ website first (no native app yet).
 
 ## Data sources (see RESEARCH.md for full detail)
 
-- **Idealist Open Network API** — primary source for both volunteer opportunities and paid nonprofit jobs (~100k listings, 250k+ orgs); also the only free path to verified org websites at scale, since ProPublica doesn't have one (see below)
-- **ProPublica Nonprofit Explorer API** — org identity + cause code: EIN, name, city/state, street address, NTEE code, raw Form 990 financials. **No mission text, no website field** — confirmed via live API calls, corrects earlier secondary-source research. See RESEARCH.md.
+- **Idealist Open Network API** — still the primary target for opportunity-
+  and job-level data at scale (~100k listings, 250k+ orgs) — that part of
+  the gap is unchanged and still gated on API access.
+- **ProPublica Nonprofit Explorer API** — org identity + cause code: EIN,
+  name, city/state, street address, NTEE code, raw Form 990 financials.
+  **No mission text, no website field** — confirmed via live API calls,
+  corrects earlier secondary-source research. See RESEARCH.md.
+  **Update**: the website-field gap turned out to be closable by hand at
+  this scale rather than only via Idealist — a manual verification pass
+  (`scripts/verified-websites.json`, documented in `HOWTO.md`) has now
+  confirmed real websites for 257 orgs. `fetch-orgs.mjs` also now *excludes*
+  an org from the shipped directory entirely if it has no verified website,
+  rather than showing it with a constructed Google-search fallback (see "v0
+  status" below) — so Idealist is no longer strictly required to close this
+  particular gap, just to make it lower-effort at a larger scale than King +
+  Snohomish County.
 - **Data.gov** — confirmed dead as of 2026-08-27 (`catalog.data.gov`'s CKAN API 404s on every endpoint). Kept as a non-blocking best-effort step in case it's restored.
 
-## v0 status (as of 2026-08-27)
+## v0 status (as of 2026-08-31)
 
 Built and working: static React (Vite) app, `scripts/fetch-orgs.mjs` pulling
 275 WA nonprofits from ProPublica (filtered to the pilot-area cities) plus 5
@@ -143,6 +161,75 @@ orientation, and training" requirement — Tech Center Volunteer already had
 this captured, Front Desk was missing it. Fixed by re-reading the org's own
 page rather than assuming symmetry between similar-sounding roles.
 
+**Fifth pass (2026-08-31) — closed most of the website-verification
+backlog, and stopped shipping unverified orgs at all**: ran a full research
+pass over the remaining unverified ProPublica orgs, taking verified websites
+from 203 to 257 and explicitly excluding 4 more orgs that don't actually
+belong in a WA-serving directory (three internal Providence entities hiding
+behind a shared Renton tax-filing address — same pattern as the Kadlec/
+Covenant Health exclusions — plus AmazonSmile Foundation, whose program was
+discontinued in 2023). Then went further than "verify more": changed
+`fetch-orgs.mjs` to drop any org lacking a verified website from the
+directory entirely, rather than shipping it with a constructed Google-search
+link. For the same reason, removed the equivalent fallback on the
+*volunteer-page* link (`org.volunteerUrl`) — a link that just reroutes to a
+Google search isn't a real, actionable listing either. Only the 5 curated
+orgs (which supply a real, hand-verified volunteer-page URL directly) get a
+"Volunteer page →" link now; every other org just gets its verified "Visit
+website →" link. Net effect: the directory shrank from 275 to 261 orgs, but
+every single one now has a real website behind it — see `HOWTO.md` step 5
+for the manual verification workflow this all runs on.
+
+**Sixth pass (2026-08-31) — visual redesign**: reshaped the UI around a
+distinctive, subject-specific direction — a civic library card-catalog look
+(guide-tab cause labels, a circulation-stamp footer) rather than a generic
+SaaS template, since this is literally a directory and one of its featured
+orgs is the Seattle Public Library Foundation. New palette (white
+background per explicit request, ledger green, one stamp-red accent, guide-
+tab gold), new type system (Fraunces + Public Sans + IBM Plex Mono), and
+`lucide-react` icons throughout (tabs, cause tags, search, filters, external
+links). Full mobile-responsive pass verified at 390px width with zero
+horizontal overflow. Found and fixed two real overflow bugs along the way —
+a long `employmentType` string forcing a job card wider than its column, and
+a long contact email bleeding out of an opportunity card — both traced to
+missing `overflow-wrap` handling, now fixed at the shared `.org-card` level
+so the same class of bug can't recur silently. Full detail in the README's
+new "Harder problems solved" section.
+
+**Seventh pass (2026-08-31) — the footer became the signature element, and
+did triple duty**: a rotated circulation-stamp graphic shows a real,
+site-wide visit count (the "Visit counter" row above) — the actual answer
+to "add a free click tracker" — while also carrying a data-freshness note
+(what data this is, and a LinkedIn link for update requests) and a © 2026
+copyright line. Also added an "org's own website" link to every job and
+opportunity card (previously only the Nonprofits tab linked out to the org
+directly), plus a derived link to the real domain behind a job's `mailto:`
+apply address when that domain differs from the org's own site (a fiscal
+sponsor or staffing partner posted the listing on the org's behalf, in the
+handful of cases this came up).
+
+**Eighth pass (2026-08-31) — URL-synced filters**: extended the existing
+`?type=&page=` URL sync to cover every filter that defines "what's being
+browsed" — `?q=`, `?county=`, `?cause=`, `?radius=` — so a saved, shared, or
+reloaded link reproduces the same filtered view, including distance (the
+actual ask). Restoring distance still needs a fresh geolocation grant, since
+a browser won't hand a page a location from a URL alone; a saved link with
+`?radius=` re-requests it on load, which resolves silently if the browser
+already granted this origin permission. Also added a plain-English summary
+of active filters next to each tab's result count (e.g. "43 nonprofits for
+King County, within 25 mi, Health").
+
+**Ninth pass (2026-08-31) — deployed, and hardened for being public**:
+deployed to GitHub Pages (see the architecture table above) — which
+required making the repo public, since GitHub Pages isn't available for
+private repos on the free plan. Checked for tracked secrets/credentials
+first (none found) before flipping visibility. Once public, added the
+safety measures documented in `SECURITY.md`: GitHub secret scanning + push
+protection + Dependabot security updates enabled on the repo, a weekly
+CodeQL scan, a Content-Security-Policy meta tag scoped to the exact external
+hosts the app actually calls, and `rel="noopener noreferrer"` on every
+external link. `npm audit` currently reports 0 vulnerabilities.
+
 ## Open questions / not yet decided
 
 - Whether to formalize as a nonprofit (affects grant eligibility, see RESEARCH.md)
@@ -153,7 +240,8 @@ page rather than assuming symmetry between similar-sounding roles.
 ## Next steps
 
 1. ~~Scaffold the repo: React app + GitHub Actions scraper workflow~~ — done, see "v0 status" above
-2. Get Idealist Open Network API access (application/approval may take time — start early; this is now the top blocker for both opportunity-level data and verified org websites)
-3. Deploy v0 (Vercel or GitHub Pages) so it's actually usable, not just running locally
+2. ~~Deploy v0 so it's actually usable, not just running locally~~ — done: live on GitHub Pages, see "v0 status" above
+3. Get Idealist Open Network API access (application/approval may take time — start early; still the top blocker for opportunity/job-*level* data at scale — the org-website gap it was also meant to close turned out to be solvable by hand at this scale, see "Data sources" above)
 4. Design the LLM ranking prompt (interest + availability → ranked shortlist) and test against sample data before wiring to live listings
 5. Decide the curated-org list's growth path: keep hand-adding real local orgs to `scripts/curated-orgs.json`, or treat it as a stopgap fully superseded once Idealist access lands
+6. Decide whether the manual website-verification pass (now 257 orgs deep) is worth continuing by hand for the last 13 remaining unverified orgs, or worth stopping there — they're mostly private foundations/trusts with no public website, a genuine dead end rather than a backlog
