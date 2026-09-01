@@ -1,10 +1,14 @@
-import type { JobListing } from '../types';
+import type { JobListing, Org } from '../types';
+import { mailtoSourceUrl } from '../lib/mailto';
 
 interface JobCardProps {
   job: JobListing;
+  org?: Org;
 }
 
-export function JobCard({ job }: JobCardProps) {
+export function JobCard({ job, org }: JobCardProps) {
+  const sourceUrl = mailtoSourceUrl(job.applyUrl);
+
   return (
     <article className="org-card">
       <div className="org-card-header">
@@ -25,6 +29,16 @@ export function JobCard({ job }: JobCardProps) {
         {job.applyUrl && (
           <a href={job.applyUrl} target="_blank" rel="noreferrer" className="org-link org-link-primary">
             {job.specific ? 'View & apply →' : 'See current openings →'}
+          </a>
+        )}
+        {sourceUrl && (
+          <a href={sourceUrl} target="_blank" rel="noreferrer" className="org-link">
+            Job posting source →
+          </a>
+        )}
+        {org?.website && (
+          <a href={org.website} target="_blank" rel="noreferrer" className="org-link">
+            Visit organization →
           </a>
         )}
       </div>

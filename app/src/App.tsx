@@ -164,14 +164,14 @@ function App() {
               {filteredOpportunities.length} volunteer opportunit{filteredOpportunities.length === 1 ? 'y' : 'ies'}
               {' — '}hand-verified from each organization's own site
             </p>
-            <OpportunityList opportunities={oppPage.pageItems} />
+            <OpportunityList opportunities={oppPage.pageItems} orgById={orgById} />
             <Pagination page={oppPage.page} totalPages={oppPage.totalPages} onChange={oppPage.setPage} />
           </>
         )}
         {tab === 'jobs' && (
           <>
             <p className="result-count">{filteredJobs.length} paid job{filteredJobs.length === 1 ? '' : 's'}</p>
-            <JobList jobs={jobPage.pageItems} />
+            <JobList jobs={jobPage.pageItems} orgById={orgById} />
             <Pagination page={jobPage.page} totalPages={jobPage.totalPages} onChange={jobPage.setPage} />
           </>
         )}

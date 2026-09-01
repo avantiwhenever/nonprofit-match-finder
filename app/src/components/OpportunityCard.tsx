@@ -1,10 +1,11 @@
-import type { Opportunity } from '../types';
+import type { Opportunity, Org } from '../types';
 
 interface OpportunityCardProps {
   opportunity: Opportunity;
+  org?: Org;
 }
 
-export function OpportunityCard({ opportunity: o }: OpportunityCardProps) {
+export function OpportunityCard({ opportunity: o, org }: OpportunityCardProps) {
   return (
     <article className={`org-card ${o.status === 'paused' ? 'card-paused' : ''}`}>
       <div className="org-card-header">
@@ -48,6 +49,11 @@ export function OpportunityCard({ opportunity: o }: OpportunityCardProps) {
         {o.signUpUrl && (
           <a href={o.signUpUrl} target="_blank" rel="noreferrer" className="org-link org-link-primary">
             Sign up →
+          </a>
+        )}
+        {org?.website && (
+          <a href={org.website} target="_blank" rel="noreferrer" className="org-link">
+            Visit organization →
           </a>
         )}
         {o.contact && <span className="org-address">{o.contact}</span>}
