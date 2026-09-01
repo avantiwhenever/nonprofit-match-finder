@@ -164,7 +164,6 @@ function App() {
           <>
             <p className="result-count">
               {filteredOpportunities.length} volunteer opportunit{filteredOpportunities.length === 1 ? 'y' : 'ies'}
-              {' — '}hand-verified from each organization's own site
             </p>
             <OpportunityList opportunities={oppPage.pageItems} orgById={orgById} />
             <Pagination page={oppPage.page} totalPages={oppPage.totalPages} onChange={oppPage.setPage} />
