@@ -1,17 +1,25 @@
 :root {
-  --text: #3f4a44;
-  --text-h: #14201a;
-  --text-muted: #6b7a72;
-  --bg: #faf9f5;
+  /* Civic library card-catalog palette: manila card stock, ledger-green
+     ink, a single stamp-red accent for anything actionable, and
+     guide-tab gold for cause/category labels. */
+  --text: #3a463c;
+  --text-h: #182a1e;
+  --text-muted: #6e7a6a;
+  --bg: #ffffff;
   --bg-raised: #ffffff;
-  --border: #dfe2dc;
-  --accent: #2f7a5c;
-  --accent-strong: #1f5e44;
-  --accent-bg: rgba(47, 122, 92, 0.1);
-  --tag-bg: #e8f0ea;
-  --shadow: rgba(20, 32, 26, 0.06) 0 1px 3px, rgba(20, 32, 26, 0.04) 0 1px 2px;
+  --border: #e2d9bb;
+  --accent: #2f4a3b;
+  --accent-strong: #203327;
+  --accent-bg: rgba(47, 74, 59, 0.08);
+  --tag-bg: #efe1be;
+  --stamp: #a23b2e;
+  --stamp-bg: rgba(162, 59, 46, 0.08);
+  --gold: #9c7a35;
+  --shadow: rgba(28, 24, 12, 0.1) 0 1px 3px, rgba(28, 24, 12, 0.06) 0 1px 2px;
 
-  --sans: 'Segoe UI', system-ui, Roboto, sans-serif;
+  --display: 'Fraunces', ui-serif, Georgia, serif;
+  --sans: 'Public Sans', system-ui, Roboto, sans-serif;
+  --mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, monospace;
 
   font: 16px/1.5 var(--sans);
   color-scheme: light dark;
@@ -23,17 +31,31 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #c4cdc6;
-    --text-h: #edf2ee;
-    --text-muted: #8a978f;
-    --bg: #121814;
-    --bg-raised: #1a221c;
-    --border: #2a352d;
-    --accent: #4fae87;
-    --accent-strong: #6fc7a3;
-    --accent-bg: rgba(79, 174, 135, 0.14);
-    --tag-bg: #1f2b23;
-    --shadow: rgba(0, 0, 0, 0.3) 0 1px 3px, rgba(0, 0, 0, 0.2) 0 1px 2px;
+    /* Same ledger, read by lamplight: deep forest paper, warm parchment
+       headings, brighter moss/gold/terracotta so they still read as the
+       same three roles (identity / actionable / category) against dark. */
+    --text: #c3ccbf;
+    --text-h: #ede7d3;
+    --text-muted: #8a9584;
+    --bg: #141c15;
+    --bg-raised: #1c2620;
+    --border: #35402f;
+    --accent: #86b491;
+    --accent-strong: #a3cba9;
+    --accent-bg: rgba(134, 180, 145, 0.12);
+    --tag-bg: #2c2716;
+    --stamp: #e08a72;
+    --stamp-bg: rgba(224, 138, 114, 0.14);
+    --gold: #d3ab5f;
+    --shadow: rgba(0, 0, 0, 0.4) 0 1px 3px, rgba(0, 0, 0, 0.28) 0 1px 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
   }
 }
 
@@ -47,6 +69,7 @@ body {
 
 h1, h2, h3 {
   color: var(--text-h);
+  font-family: var(--display);
   font-weight: 600;
   margin: 0;
 }

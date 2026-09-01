@@ -1,5 +1,6 @@
 import type { JobListing, Org } from '../types';
 import { mailtoSourceUrl } from '../lib/mailto';
+import { CardLink } from './CardLink';
 
 interface JobCardProps {
   job: JobListing;
@@ -27,20 +28,12 @@ export function JobCard({ job, org }: JobCardProps) {
       )}
       <div className="org-card-actions">
         {job.applyUrl && (
-          <a href={job.applyUrl} target="_blank" rel="noreferrer" className="org-link org-link-primary">
-            {job.specific ? 'View & apply →' : 'See current openings →'}
-          </a>
+          <CardLink href={job.applyUrl} primary>
+            {job.specific ? 'View & apply' : 'See current openings'}
+          </CardLink>
         )}
-        {sourceUrl && (
-          <a href={sourceUrl} target="_blank" rel="noreferrer" className="org-link">
-            Job posting source →
-          </a>
-        )}
-        {org?.website && (
-          <a href={org.website} target="_blank" rel="noreferrer" className="org-link">
-            Visit organization →
-          </a>
-        )}
+        {sourceUrl && <CardLink href={sourceUrl}>Job posting source</CardLink>}
+        {org?.website && <CardLink href={org.website}>Visit organization</CardLink>}
       </div>
     </article>
   );

@@ -14,6 +14,7 @@ import { JobList } from './components/JobList';
 import { MapView } from './components/MapView';
 import { Pagination } from './components/Pagination';
 import { RadiusFilter } from './components/RadiusFilter';
+import { Footer } from './components/Footer';
 import { usePagination } from './lib/usePagination';
 import { useGeolocation } from './lib/useGeolocation';
 import { coordsForCity } from './lib/cityCoords';
@@ -127,6 +128,7 @@ function App() {
   return (
     <div className="app">
       <header className="app-header">
+        <span className="app-eyebrow">King &amp; Snohomish County · Pilot</span>
         <h1>Find nonprofit volunteering opportunities and jobs near you</h1>
         <p className="tagline">
           Browse King &amp; Snohomish County nonprofits, volunteer roles, and
@@ -176,6 +178,8 @@ function App() {
           </>
         )}
       </main>
+
+      <Footer />
     </div>
   );
 }
