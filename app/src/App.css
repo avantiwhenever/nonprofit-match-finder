@@ -143,6 +143,7 @@
 
 .org-card-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   gap: 8px;
@@ -171,8 +172,8 @@
    long (e.g. "Part-time (remote eligible, US only, excluding AK/CA/HI/NY)")
    — it needs to wrap and shrink instead of forcing the card to overflow. */
 .job-type-tag {
-  flex-shrink: 1;
-  min-width: 0;
+  flex-shrink: 0;
+  max-width: 100%;
   background: var(--tag-bg);
   color: var(--accent-strong);
   font-size: 11px;
@@ -181,7 +182,6 @@
   border-radius: 999px;
   white-space: normal;
   overflow-wrap: break-word;
-  text-align: right;
   line-height: 1.35;
 }
 
