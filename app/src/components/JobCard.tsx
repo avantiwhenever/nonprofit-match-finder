@@ -13,7 +13,7 @@ export function JobCard({ job, org }: JobCardProps) {
     <article className="org-card">
       <div className="org-card-header">
         <h3>{job.title}</h3>
-        {job.employmentType && <span className="cause-tag">{job.employmentType}</span>}
+        {job.employmentType && <span className="job-type-tag">{job.employmentType}</span>}
       </div>
       <p className="org-city">
         {job.orgName} · {job.city}, {job.county} County
