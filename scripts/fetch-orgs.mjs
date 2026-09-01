@@ -38,6 +38,10 @@ const EXCLUDED_IDS = new Set([
   'pp-951684082', // "Providence Saint Johns Health Center" — real hospital, but in Santa Monica, CA
   'pp-814542216', // "Providence Saint Johns Medical Foundation" — fundraising arm of the same Santa Monica, CA hospital
   'pp-833972614', // "Tarzana Medical Center Llc" — confirmed Providence Cedars-Sinai Tarzana Medical Center, in Tarzana (Los Angeles), CA
+  'pp-810463482', // "Providence St Joseph Medical Center" — resolves to the Providence Saint Joseph Medical Center in Burbank, CA; uses the same shared Providence Renton tax-filing address as Covenant Health/Kadlec/Santa Rosa
+  'pp-911861964', // "Providence Plan Partners" — internal Providence health-plan administrative entity at the same shared Renton tax-filing address, not a distinct WA-serving direct-service org
+  'pp-454171900', // "Western Healthconnect" — internal Providence administrative entity at the same shared Renton tax-filing address, no public-facing presence
+  'pp-462626883', // "Amazonsmile Foundation" — the AmazonSmile program was discontinued in 2023 and the foundation terminated; no active operations or website
 ]);
 const OPPORTUNITIES_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'opportunities.json');
 const JOBS_OUT_PATH = path.join(__dirname, '..', 'app', 'src', 'data', 'jobs.json');

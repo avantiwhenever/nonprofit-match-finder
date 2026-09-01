@@ -65,8 +65,8 @@
     "county": "King",
     "state": "WA",
     "address": "4020 E MADISON ST STE 322",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Aldarra%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.aldarrafoundation.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.aldarrafoundation.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -109,20 +109,6 @@
     "address": "16030 JUANITA WOODINVILLE WAY NE",
     "website": "https://www.alphasls.org",
     "volunteerUrl": "https://www.google.com/search?q=site%3Awww.alphasls.org%20volunteer",
-    "source": "propublica"
-  },
-  {
-    "id": "pp-462626883",
-    "name": "Amazonsmile Foundation",
-    "mission": null,
-    "causeBundle": "Other",
-    "nteeCode": "T20",
-    "city": "Seattle",
-    "county": "King",
-    "state": "WA",
-    "address": "PO BOX 81226",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Amazonsmile%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
     "source": "propublica"
   },
   {
@@ -177,8 +163,8 @@
     "county": "King",
     "state": "WA",
     "address": "100 23RD AVE S",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Archdiocesan%20Housing%20Authority%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.ccsww.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ccsww.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -219,8 +205,8 @@
     "county": "King",
     "state": "WA",
     "address": "850 REPUBLICAN ST BLD C BOX 359110",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Association%20Of%20University%20Physicians%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.uwmedicine.org/uw-physicians",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.uwmedicine.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -233,8 +219,8 @@
     "county": "King",
     "state": "WA",
     "address": "PO BOX 21669",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=B%20H%20Music%20Center%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.seattlesymphony.org/benaroyahall",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.seattlesymphony.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -779,8 +765,8 @@
     "county": "King",
     "state": "WA",
     "address": "11000 LAKE CITY WAY NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Community%20Psychiatric%20Clinic%20Inc%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.cpcwa.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.cpcwa.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -849,8 +835,8 @@
     "county": "King",
     "state": "WA",
     "address": "2901 3RD AVE STE 100",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Crisis%20Connections%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://crisisconnections.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Acrisisconnections.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1101,8 +1087,8 @@
     "county": "King",
     "state": "WA",
     "address": "1700 AIRPORT WAY S",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Evergreen%20Treatment%20Services%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.evergreentreatment.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.evergreentreatment.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1227,8 +1213,8 @@
     "county": "King",
     "state": "WA",
     "address": "2121 TERRY AVENUE 1701",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Foundation%20For%20Healthy%20Relationships%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://loveology.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Aloveology.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1411,6 +1397,20 @@
     "address": "5601 6TH S AVE STE 150",
     "website": "https://www.girlscoutsww.org",
     "volunteerUrl": "https://www.google.com/search?q=site%3Awww.girlscoutsww.org%20volunteer",
+    "source": "propublica"
+  },
+  {
+    "id": "pp-851595660",
+    "name": "Global Health Labs Inc",
+    "mission": null,
+    "causeBundle": "Health",
+    "nteeCode": "E02",
+    "city": "Bellevue",
+    "county": "King",
+    "state": "WA",
+    "address": "14360 SE EASTGATE WAY",
+    "website": "https://www.ghlabs.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ghlabs.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1633,8 +1633,8 @@
     "county": "King",
     "state": "WA",
     "address": "1301 5TH AVE STE 2600",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Inatai%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://inatai.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Ainatai.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1745,8 +1745,8 @@
     "county": "King",
     "state": "WA",
     "address": "PO BOX 447",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Ken%20Birdwell%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.k-b-f.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.k-b-f.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -1759,8 +1759,8 @@
     "county": "King",
     "state": "WA",
     "address": "129 LAKE AVE W",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Khaki%20Foundation%20Kirkland%20WA%20volunteer%20opportunities",
+    "website": "https://khakifoundation.com",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Akhakifoundation.com%20volunteer",
     "source": "propublica"
   },
   {
@@ -1899,8 +1899,8 @@
     "county": "King",
     "state": "WA",
     "address": "4634 E MARGINAL WAY S STE C200",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Lifelong%20Health%20For%20All%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.lifelong.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.lifelong.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2039,8 +2039,8 @@
     "county": "King",
     "state": "WA",
     "address": "2033 6TH AVE STE 252",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Montlake%20Futures%20Fund%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://montlakefutures.com",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Amontlakefutures.com%20volunteer",
     "source": "propublica"
   },
   {
@@ -2165,8 +2165,8 @@
     "county": "Snohomish",
     "state": "WA",
     "address": "12911 39TH AVE SE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Northsound%20Association%20For%20Catholic%20Education%20Everett%20WA%20volunteer%20opportunities",
+    "website": "https://www.am-hs.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.am-hs.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2361,8 +2361,8 @@
     "county": "King",
     "state": "WA",
     "address": "12335 134TH CT NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Pivotal%20Philanthropies%20Foundation%20Redmond%20WA%20volunteer%20opportunities",
+    "website": "https://www.pivotalventures.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2375,8 +2375,8 @@
     "county": "King",
     "state": "WA",
     "address": "12335 134TH CT NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Pivotal%20Philanthropies%20Momentum%20Foundation%20Redmond%20WA%20volunteer%20opportunities",
+    "website": "https://www.pivotalventures.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2389,8 +2389,8 @@
     "county": "King",
     "state": "WA",
     "address": "12335 134TH CT NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Pivotal%20Philanthropies%20Opportunity%20Foundation%20Redmond%20WA%20volunteer%20opportunities",
+    "website": "https://www.pivotalventures.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2403,8 +2403,8 @@
     "county": "King",
     "state": "WA",
     "address": "12335 134TH CT NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Pivotal%20Philanthropies%20Pathways%20Fou%20Ndation%20Redmond%20WA%20volunteer%20opportunities",
+    "website": "https://www.pivotalventures.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pivotalventures.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2478,6 +2478,20 @@
     "source": "propublica"
   },
   {
+    "id": "pp-910593488",
+    "name": "Provail",
+    "mission": null,
+    "causeBundle": "Health",
+    "nteeCode": "G200",
+    "city": "Seattle",
+    "county": "King",
+    "state": "WA",
+    "address": "12550 AURORA AVE N",
+    "website": "https://provail.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Aprovail.org%20volunteer",
+    "source": "propublica"
+  },
+  {
     "id": "pp-510216586",
     "name": "Providence Health & Services Washington",
     "mission": null,
@@ -2489,34 +2503,6 @@
     "address": "1801 LIND AVE SW ATTN TAX DEPT",
     "website": "https://www.providence.org",
     "volunteerUrl": "https://www.google.com/search?q=site%3Awww.providence.org%20volunteer",
-    "source": "propublica"
-  },
-  {
-    "id": "pp-911861964",
-    "name": "Providence Plan Partners",
-    "mission": null,
-    "causeBundle": "Health",
-    "nteeCode": "E020",
-    "city": "Renton",
-    "county": "King",
-    "state": "WA",
-    "address": "CO PSJH TAX DEPT 1801 LIND AVE SW",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Providence%20Plan%20Partners%20Renton%20WA%20volunteer%20opportunities",
-    "source": "propublica"
-  },
-  {
-    "id": "pp-810463482",
-    "name": "Providence St Joseph Medical Center",
-    "mission": null,
-    "causeBundle": "Health",
-    "nteeCode": "E22",
-    "city": "Seattle",
-    "county": "King",
-    "state": "WA",
-    "address": "PO BOX 389672",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Providence%20St%20Joseph%20Medical%20Center%20Seattle%20WA%20volunteer%20opportunities",
     "source": "propublica"
   },
   {
@@ -2543,8 +2529,8 @@
     "county": "Snohomish",
     "state": "WA",
     "address": "1019 PACIFIC AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Puget%20Sound%20Kidney%20Centers%20Everett%20WA%20volunteer%20opportunities",
+    "website": "https://www.pskc.net",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.pskc.net%20volunteer",
     "source": "propublica"
   },
   {
@@ -2557,8 +2543,8 @@
     "county": "King",
     "state": "WA",
     "address": "149 PARK AVE N UNIT A",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Puget%20Sound%20Regional%20Services%20Renton%20WA%20volunteer%20opportunities",
+    "website": "https://gopsrs.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Agopsrs.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2613,8 +2599,8 @@
     "county": "King",
     "state": "WA",
     "address": "568 1ST AVE S STE 600",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Realnetworks%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://realnetworks.com/realnetworks-foundation",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Arealnetworks.com%20volunteer",
     "source": "propublica"
   },
   {
@@ -2655,8 +2641,8 @@
     "county": "King",
     "state": "WA",
     "address": "7107 GREENWOOD AVE N STE A",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Roots%20And%20Wings%20Foundation%20Inc%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.rootswings.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.rootswings.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2685,6 +2671,20 @@
     "address": "2901 3RD AVE STE 330",
     "website": "https://sagebionetworks.org",
     "volunteerUrl": "https://www.google.com/search?q=site%3Asagebionetworks.org%20volunteer",
+    "source": "propublica"
+  },
+  {
+    "id": "pp-911641746",
+    "name": "Samis Foundation",
+    "mission": null,
+    "causeBundle": "Other",
+    "nteeCode": "T22Z",
+    "city": "Seattle",
+    "county": "King",
+    "state": "WA",
+    "address": "208 JAMES ST STE C",
+    "website": "https://samisfoundation.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Asamisfoundation.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2725,8 +2725,8 @@
     "county": "King",
     "state": "WA",
     "address": "300 LENORA ST PMB 1750",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Scholar%20Fund%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.scholarfundwa.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.scholarfundwa.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2865,8 +2865,8 @@
     "county": "King",
     "state": "WA",
     "address": "611 12TH AVE S",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Seattle%20Indian%20Health%20Board%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.sihb.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.sihb.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2921,8 +2921,8 @@
     "county": "King",
     "state": "WA",
     "address": "1000 4TH AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Seattle%20Public%20Library%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.supportspl.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.supportspl.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -2949,8 +2949,8 @@
     "county": "King",
     "state": "WA",
     "address": "500 19TH AVE E",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Seattle%20Roots%20Community%20Health%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://seattleroots.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Aseattleroots.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3033,8 +3033,8 @@
     "county": "King",
     "state": "WA",
     "address": "215 COLUMBIA ST STE 300",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Seiu%20Healthcare%20Northwest%20Training%20Partnership%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.healthcareerfund.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.healthcareerfund.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3089,8 +3089,8 @@
     "county": "Snohomish",
     "state": "WA",
     "address": "2722 COLBY AVE STE 200",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Snohomish%20County%20Public%20Defenders%20Association%20Everett%20WA%20volunteer%20opportunities",
+    "website": "https://www.snocopda.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.snocopda.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3131,8 +3131,8 @@
     "county": "King",
     "state": "WA",
     "address": "1225 S WELLER ST STE 200",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Sound%20Child%20Care%20Solutions%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.soundchild.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.soundchild.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3173,8 +3173,8 @@
     "county": "King",
     "state": "WA",
     "address": "1801 LIND AVE SW ATTN TAX DEPT",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=St%20Joseph%20Health%20System%20Renton%20WA%20volunteer%20opportunities",
+    "website": "https://www.providence.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.providence.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3402,6 +3402,20 @@
     "source": "propublica"
   },
   {
+    "id": "pp-910882971",
+    "name": "Therapeutic Health Services",
+    "mission": null,
+    "causeBundle": "Health",
+    "nteeCode": "F22",
+    "city": "Seattle",
+    "county": "King",
+    "state": "WA",
+    "address": "1116 SUMMIT AVE",
+    "website": "https://ths-wa.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Aths-wa.org%20volunteer",
+    "source": "propublica"
+  },
+  {
     "id": "pp-824806875",
     "name": "Thrive Causemetics Foundation",
     "mission": null,
@@ -3425,8 +3439,8 @@
     "county": "King",
     "state": "WA",
     "address": "4649 SUNNYSIDE AVE N STE 100",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Tilth%20Alliance%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://tilthalliance.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Atilthalliance.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3439,8 +3453,8 @@
     "county": "King",
     "state": "WA",
     "address": "720 SENECA ST STE A",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Town%20Hall%20Association%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://townhallseattle.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Atownhallseattle.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3453,8 +3467,8 @@
     "county": "King",
     "state": "WA",
     "address": "4649 SUNNYSIDE AVE N STE 540",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Toxic-free%20Future%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://toxicfreefuture.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Atoxicfreefuture.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3467,8 +3481,8 @@
     "county": "King",
     "state": "WA",
     "address": "2100 24TH S AVE STE 200",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Treehouse%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.treehouseforkids.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.treehouseforkids.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3481,8 +3495,8 @@
     "county": "King",
     "state": "WA",
     "address": "720 2ND AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=United%20Way%20Of%20King%20County%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.uwkc.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.uwkc.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3495,8 +3509,8 @@
     "county": "King",
     "state": "WA",
     "address": "5062 9TH AVE NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=University%20Child%20Development%20School%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.ucds.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ucds.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3509,8 +3523,8 @@
     "county": "King",
     "state": "WA",
     "address": "400 GERBERDING HALL",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=University%20Of%20Washington%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.washington.edu/giving",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.washington.edu%20volunteer",
     "source": "propublica"
   },
   {
@@ -3523,8 +3537,8 @@
     "county": "King",
     "state": "WA",
     "address": "8000 25TH AVE NE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=University%20Preparatory%20Academy%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.universityprep.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.universityprep.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3537,8 +3551,8 @@
     "county": "King",
     "state": "WA",
     "address": "816 CENTRAL AVE N",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Unkitawa%20Kent%20WA%20volunteer%20opportunities",
+    "website": "https://www.unkitawa.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.unkitawa.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3579,8 +3593,8 @@
     "county": "King",
     "state": "WA",
     "address": "325 W GOWE ST",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Valley%20Cities%20Counseling%20And%20Consultation%20Kent%20WA%20volunteer%20opportunities",
+    "website": "https://www.valleycities.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.valleycities.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3593,8 +3607,8 @@
     "county": "King",
     "state": "WA",
     "address": "5001 NE 50TH ST",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Villa%20Academy%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.thevilla.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.thevilla.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3607,8 +3621,8 @@
     "county": "King",
     "state": "WA",
     "address": "303 FRONT ST N",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Village%20Theatre%20Issaquah%20WA%20volunteer%20opportunities",
+    "website": "https://villagetheatre.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Avillagetheatre.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3621,8 +3635,8 @@
     "county": "King",
     "state": "WA",
     "address": "210 S HUDSON ST STE 307",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Villagereach%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.villagereach.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.villagereach.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3635,8 +3649,8 @@
     "county": "King",
     "state": "WA",
     "address": "1100 9TH AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Virginia%20Mason%20Medical%20Center%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.virginiamason.org/seattle",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.virginiamason.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3663,8 +3677,8 @@
     "county": "King",
     "state": "WA",
     "address": "1417 4TH AVE STE 800",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Washington%20Conservation%20Action%20Education%20Fund%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://wcactionef.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awcactionef.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3677,8 +3691,8 @@
     "county": "King",
     "state": "WA",
     "address": "701 PIKE ST STE 1900",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Washington%20Institute%20For%20Coagulation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.wacbd.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.wacbd.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3691,8 +3705,8 @@
     "county": "King",
     "state": "WA",
     "address": "1900 W NICKERSON ST STE 301",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Washington%20Maritime%20Blue%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://maritimeblue.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Amaritimeblue.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3705,8 +3719,8 @@
     "county": "King",
     "state": "WA",
     "address": "1500 WESTLAKE AVE N STE 202",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Washington%20Water%20Trust%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.washingtonwatertrust.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.washingtonwatertrust.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3719,22 +3733,8 @@
     "county": "King",
     "state": "WA",
     "address": "1211 E DENNY WAY 45B",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Washingtonfilmworks%20Seattle%20WA%20volunteer%20opportunities",
-    "source": "propublica"
-  },
-  {
-    "id": "pp-454171900",
-    "name": "Western Healthconnect",
-    "mission": null,
-    "causeBundle": "Health",
-    "nteeCode": "E21",
-    "city": "Renton",
-    "county": "King",
-    "state": "WA",
-    "address": "1801 LIND AVE SW ATTN TAX DEPT",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Western%20Healthconnect%20Renton%20WA%20volunteer%20opportunities",
+    "website": "https://www.washingtonfilmworks.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.washingtonfilmworks.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3747,8 +3747,8 @@
     "county": "King",
     "state": "WA",
     "address": "10404 34TH AVE SW",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Westside%20School%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.westsideschool.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.westsideschool.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3761,8 +3761,8 @@
     "county": "King",
     "state": "WA",
     "address": "2034 NW 56TH ST STE 300",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Wilburforce%20Foundation%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.wilburforce.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.wilburforce.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3775,8 +3775,8 @@
     "county": "King",
     "state": "WA",
     "address": "19102 NORTH CREEK PKWY STE 100",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Woodinville%20Montessori%20School%20Bothell%20WA%20volunteer%20opportunities",
+    "website": "https://www.woodinvillemontessori.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.woodinvillemontessori.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3789,8 +3789,8 @@
     "county": "King",
     "state": "WA",
     "address": "5500 PHINNEY AVE N",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Woodland%20Park%20Zoological%20Society%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.zoo.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.zoo.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3803,8 +3803,8 @@
     "county": "King",
     "state": "WA",
     "address": "375 118TH AVE SE STE 102C",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Wtia%20Workforce%20Institute%20Bellevue%20WA%20volunteer%20opportunities",
+    "website": "https://www.apprenticareers.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.apprenticareers.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3817,8 +3817,8 @@
     "county": "King",
     "state": "WA",
     "address": "1118 5TH AVE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Young%20Womens%20Christian%20Association%20Of%20Seattle-king%20County-snohomish%20C%20Seattle%20WA%20volunteer%20opportunities",
+    "website": "https://www.ywcaworks.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.ywcaworks.org%20volunteer",
     "source": "propublica"
   },
   {
@@ -3831,8 +3831,8 @@
     "county": "Snohomish",
     "state": "WA",
     "address": "5316 114TH ST SE",
-    "website": null,
-    "volunteerUrl": "https://www.google.com/search?q=Youthcare%20Everett%20WA%20volunteer%20opportunities",
+    "website": "https://www.youthcare.org",
+    "volunteerUrl": "https://www.google.com/search?q=site%3Awww.youthcare.org%20volunteer",
     "source": "propublica"
   }
 ]
