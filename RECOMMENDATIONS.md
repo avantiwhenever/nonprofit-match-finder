@@ -32,7 +32,7 @@ website first (no native app yet).
 | Backend | None initially. When needed: Cloudflare Workers or Vercel Functions (free tier) | A JVM backend (Spring Boot) needs ~300-500MB RAM and has slow cold starts on free hosting tiers (30-60s after idle sleep) — not worth it at this scale yet |
 | Search | Static JSON index + client-side search (Fuse.js) | No live query endpoint means nothing for bots to hammer or rate-limit; doubles as the "flat file that can move to a real index later" |
 | Scraper / data refresh | GitHub Actions scheduled workflow (free cron), pulling from open APIs only | Free at this volume; use official APIs (Idealist Open Network API, ProPublica Nonprofit Explorer API, Data.gov) — do not scrape sites like Indeed/LinkedIn whose ToS forbid it |
-| User data (accounts, saved items, applications, certificates) | **Deferred, not in v0.** When needed: Supabase free tier (Postgres + built-in Auth + 500MB storage) | Explicit product decision, not an oversight: v0 tracks nothing (see README.md's "What this is right now" section for the click-through flow). No credit card required when this comes back; one service covers auth + data + storage |
+| User data (accounts, saved items, applications, certificates) | **Deferred, not in v0.** When needed: Supabase free tier (Postgres + built-in Auth + 500MB storage) | Explicit product decision, not an oversight: v0 tracks nothing (see README.md's "What it is" section for the click-through flow). No credit card required when this comes back; one service covers auth + data + storage |
 | Logging | Hosting platform's built-in log viewer for now; Grafana Cloud free tier when centralized logging is actually needed | Datadog free tier is 1-day retention/5 hosts; self-hosted ES needs a paid server — both are premature at this scale |
 | Secrets | GitHub Actions secrets + Vercel/Supabase environment variables | Built-in, encrypted, free; a dedicated secrets manager is a team-scale problem |
 | Maps | Leaflet.js + OpenStreetMap tiles | Free, no API key, no billing account required (unlike Google Maps) |
@@ -133,7 +133,7 @@ wrong — corrected in RESEARCH.md:
   non-blocking best-effort step in the scraper.
 
 No accounts, database, or tracking in v0 — confirmed as an explicit product
-decision (see README.md's "What this is right now" section for the
+decision (see README.md's "What it is" section for the
 click-through flow), not an oversight.
 
 **Fourth pass (same day) — UI: filters, radius search, pagination**: cause
@@ -193,8 +193,8 @@ horizontal overflow. Found and fixed two real overflow bugs along the way —
 a long `employmentType` string forcing a job card wider than its column, and
 a long contact email bleeding out of an opportunity card — both traced to
 missing `overflow-wrap` handling, now fixed at the shared `.org-card` level
-so the same class of bug can't recur silently. Full detail in the README's
-new "Harder problems solved" section.
+so the same class of bug can't recur silently. Full detail in
+`HARDER_PROBLEMS.md`.
 
 **Seventh pass (2026-08-31) — the footer became the signature element, and
 did triple duty**: a rotated circulation-stamp graphic shows a real,

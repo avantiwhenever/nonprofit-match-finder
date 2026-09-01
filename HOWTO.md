@@ -3,9 +3,8 @@
 A step-by-step guide to getting the app running, regenerating its data, and
 extending it on your own machine. For the "why" behind these choices, see
 [`RECOMMENDATIONS.md`](./RECOMMENDATIONS.md); for a summary of the harder
-problems this project has already run into and solved, see the
-["Harder problems solved"](./README.md#harder-problems-solved) section of
-the README.
+problems this project has already run into and solved, see
+[`HARDER_PROBLEMS.md`](./HARDER_PROBLEMS.md).
 
 ## Prerequisites
 
@@ -103,8 +102,8 @@ keys — anything with a `pp-<ein>` id not already a key there is a candidate.
 
 **b. Search for the org's real website.** Confirm it's actually the same
 org (matching city/mission), not a same-named org elsewhere, and not a
-shared administrative address masking an out-of-state entity (see "Harder
-problems solved" in the README for a real example of this).
+shared administrative address masking an out-of-state entity (see
+[`HARDER_PROBLEMS.md`](./HARDER_PROBLEMS.md) for a real example of this).
 
 **c. Add a confirmed entry** to `scripts/verified-websites.json`:
 
@@ -133,9 +132,9 @@ together.
 ## 6. Checking an org's careers/volunteer page for hidden listings
 
 Some pages look empty on a plain fetch but load their real listings via
-JavaScript into an embedded ATS widget (see "Harder problems solved" in the
-README). Two dev-only tools, neither an `npm` dependency of the deployed app
-— install on demand:
+JavaScript into an embedded ATS widget (see
+[`HARDER_PROBLEMS.md`](./HARDER_PROBLEMS.md)). Two dev-only tools, neither
+an `npm` dependency of the deployed app — install on demand:
 
 ```bash
 # preferred — auto-discovers volunteer/careers links and follows ATS iframes
@@ -158,13 +157,19 @@ page — add an entry to `scripts/curated-opportunities.json` or
 
 ## 8. Deploying
 
-The app is a static build — nothing here needs a server.
+Live at **https://avantiwhenever.github.io/nonprofit-match-finder/**. This
+is a static build (`cd app && npm run build`, output in `app/dist/`),
+deployed automatically by `.github/workflows/deploy-pages.yml` on every
+push to `main` — nothing to run by hand for a normal deploy. Notes if
+you're setting this up on a fork or a new repo:
 
-```bash
-cd app && npm run build   # output in app/dist/
-```
-
-- **Vercel** (recommended): import the repo, set the root directory to
-  `app`, framework preset "Vite" — free tier, no config needed.
-- **GitHub Pages**: enable Pages on the repo, pointed at a workflow that
-  builds `app/` and publishes `app/dist/`.
+- GitHub Pages requires the repo to be **public** on the free plan (private-
+  repo Pages needs a paid GitHub plan). Enable Pages once, with build source
+  set to "GitHub Actions", either in Settings → Pages or via
+  `gh api -X POST repos/<owner>/<repo>/pages -f build_type=workflow`.
+- Vite's `base` in `app/vite.config.ts` is set to `/nonprofit-match-finder/`
+  for production builds only (the dev server still serves from `/`) — update
+  it to match your repo name if you fork this.
+- Vercel also works unmodified (import the repo, root directory `app`,
+  framework preset "Vite") if you'd rather keep the source repo private —
+  see `RECOMMENDATIONS.md`'s architecture table for the tradeoff.

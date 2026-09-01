@@ -1,8 +1,8 @@
 # Security
 
 This is a small static site (no accounts, no user data, no backend) — see
-README.md's "What this is right now" section for exactly what it does and
-doesn't track.
+README.md's "What it is" section for exactly what it does and doesn't
+track.
 
 ## Reporting an issue
 
