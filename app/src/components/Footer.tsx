@@ -33,7 +33,7 @@ export function Footer() {
         Explorer API; volunteer and job listings are hand-curated directly
         from each organization's own site. To discuss keeping this current,
         connect with me on{' '}
-        <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
+        <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">
           LinkedIn
         </a>{' '}
         and let me know what you need.
