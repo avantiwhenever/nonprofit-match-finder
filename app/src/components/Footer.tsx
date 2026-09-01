@@ -29,9 +29,10 @@ export function Footer() {
       </div>
 
       <p className="footer-note">
-        The listings in this directory reflect a single data pull from the
-        sources cited in this project's source code. To discuss keeping it
-        current, connect with me on{' '}
+        Nonprofit listings reflect a single pull from ProPublica's Nonprofit
+        Explorer API; volunteer and job listings are hand-curated directly
+        from each organization's own site. To discuss keeping this current,
+        connect with me on{' '}
         <a href={LINKEDIN_URL} target="_blank" rel="noreferrer">
           LinkedIn
         </a>{' '}
