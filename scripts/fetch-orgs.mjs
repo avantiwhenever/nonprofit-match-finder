@@ -197,9 +197,12 @@ async function fetchProPublicaOrgs(verifiedWebsites) {
     const id = `pp-${org.ein}`;
     // Manually verified via web search (see verified-websites.json) —
     // ProPublica itself has no website field, this is the closing of that
-    // gap for orgs someone has actually confirmed. Not available for most
-    // orgs yet; falls back to the generic search link when absent.
+    // gap for orgs someone has actually confirmed. Orgs without one yet are
+    // left out of the shipped directory entirely (rather than shown with a
+    // constructed Google-search link) — an unverified name is not something
+    // to hand a user as if it were a real, actionable listing.
     const verifiedWebsite = verifiedWebsites[id] ?? null;
+    if (!verifiedWebsite) continue;
 
     results.push({
       id,
@@ -212,9 +215,7 @@ async function fetchProPublicaOrgs(verifiedWebsites) {
       state: org.state,
       address,
       website: verifiedWebsite,
-      volunteerUrl: verifiedWebsite
-        ? (siteScopedVolunteerSearchUrl(verifiedWebsite) ?? volunteerSearchUrl(org.name, org.city))
-        : volunteerSearchUrl(org.name, org.city),
+      volunteerUrl: siteScopedVolunteerSearchUrl(verifiedWebsite) ?? volunteerSearchUrl(org.name, org.city),
       source: 'propublica',
     });
   }
