@@ -1,7 +1,6 @@
 import { Compass } from 'lucide-react';
 import type { useGeolocation } from '../lib/useGeolocation';
-
-const RADIUS_OPTIONS = [5, 10, 25, 50];
+import { RADIUS_OPTIONS } from '../lib/radius';
 
 interface RadiusFilterProps {
   geo: ReturnType<typeof useGeolocation>;

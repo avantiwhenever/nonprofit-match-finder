@@ -19,7 +19,15 @@ import { usePagination } from './lib/usePagination';
 import { useGeolocation } from './lib/useGeolocation';
 import { coordsForCity } from './lib/cityCoords';
 import { distanceMiles } from './lib/geo';
-import { readInitialTab, readInitialPage, writeUrlState } from './lib/urlState';
+import {
+  readInitialTab,
+  readInitialPage,
+  readInitialQuery,
+  readInitialCounty,
+  readInitialCause,
+  readInitialRadius,
+  writeUrlState,
+} from './lib/urlState';
 import './App.css';
 
 const PAGE_SIZE = 20;
@@ -32,11 +40,23 @@ const jobs = jobsData as JobListing[];
 function App() {
   const [tab, setTab] = useState<TabKey>(readInitialTab);
   const initialPage = useRef(readInitialPage()).current;
-  const [query, setQuery] = useState('');
-  const [selectedCause, setSelectedCause] = useState<CauseBundle | null>(null);
-  const [selectedCounty, setSelectedCounty] = useState<County | null>(null);
-  const [radius, setRadius] = useState(DEFAULT_RADIUS);
+  const initialRadius = useRef(readInitialRadius()).current;
+  const [query, setQuery] = useState(readInitialQuery);
+  const [selectedCause, setSelectedCause] = useState<CauseBundle | null>(readInitialCause);
+  const [selectedCounty, setSelectedCounty] = useState<County | null>(readInitialCounty);
+  const [radius, setRadius] = useState(initialRadius ?? DEFAULT_RADIUS);
   const geo = useGeolocation();
+
+  // A saved link with ?radius= means the visitor previously granted
+  // geolocation — re-request it so the distance filter actually re-applies,
+  // not just the number in the dropdown. Browsers resolve this silently if
+  // permission is still granted for this origin; otherwise it (re-)prompts.
+  useEffect(() => {
+    if (initialRadius !== null) {
+      geo.request();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [initialRadius, geo.request]);
 
   const orgFuse = useMemo(() => createOrgSearch(orgs), []);
   const oppFuse = useMemo(() => createOpportunitySearch(opportunities), []);
@@ -118,12 +138,24 @@ function App() {
   const jobPage = usePagination(filteredJobs, PAGE_SIZE, tab === 'jobs' ? initialPage : 1);
 
   const activePage = tab === 'orgs' ? orgPage.page : tab === 'opportunities' ? oppPage.page : jobPage.page;
+  const activeRadius = geo.status === 'granted' ? radius : null;
 
-  // Keep the URL's ?type=&page= in sync with what's actually showing, so a
-  // deep link (e.g. shared or typed in directly) lands on the right view.
+  // Keep every filter that defines "what's being browsed" in the URL, so a
+  // saved/shared/reloaded link reproduces the same view.
   useEffect(() => {
-    writeUrlState(tab, activePage);
-  }, [tab, activePage]);
+    writeUrlState({ tab, page: activePage, query, county: selectedCounty, cause: selectedCause, radius: activeRadius });
+  }, [tab, activePage, query, selectedCounty, selectedCause, activeRadius]);
+
+  // A plain-English summary of what's currently narrowing the list, shown
+  // next to each tab's result count.
+  const activeFilterLabels = useMemo(() => {
+    const labels: string[] = [];
+    if (selectedCounty) labels.push(`${selectedCounty} County`);
+    if (activeRadius) labels.push(`within ${activeRadius} mi`);
+    if (selectedCause) labels.push(selectedCause);
+    return labels;
+  }, [selectedCounty, activeRadius, selectedCause]);
+  const filterSummary = activeFilterLabels.length > 0 ? ` for ${activeFilterLabels.join(', ')}` : '';
 
   return (
     <div className="app">
@@ -155,7 +187,10 @@ function App() {
       <main>
         {tab === 'orgs' && (
           <>
-            <p className="result-count">{filteredOrgs.length} nonprofit{filteredOrgs.length === 1 ? '' : 's'}</p>
+            <p className="result-count">
+              {filteredOrgs.length} nonprofit{filteredOrgs.length === 1 ? '' : 's'}
+              {filterSummary}
+            </p>
             <OrgList orgs={orgPage.pageItems} />
             <Pagination page={orgPage.page} totalPages={orgPage.totalPages} onChange={orgPage.setPage} />
           </>
@@ -164,6 +199,7 @@ function App() {
           <>
             <p className="result-count">
               {filteredOpportunities.length} volunteer opportunit{filteredOpportunities.length === 1 ? 'y' : 'ies'}
+              {filterSummary}
             </p>
             <OpportunityList opportunities={oppPage.pageItems} orgById={orgById} />
             <Pagination page={oppPage.page} totalPages={oppPage.totalPages} onChange={oppPage.setPage} />
@@ -171,7 +207,10 @@ function App() {
         )}
         {tab === 'jobs' && (
           <>
-            <p className="result-count">{filteredJobs.length} paid job{filteredJobs.length === 1 ? '' : 's'}</p>
+            <p className="result-count">
+              {filteredJobs.length} paid job{filteredJobs.length === 1 ? '' : 's'}
+              {filterSummary}
+            </p>
             <JobList jobs={jobPage.pageItems} orgById={orgById} />
             <Pagination page={jobPage.page} totalPages={jobPage.totalPages} onChange={jobPage.setPage} />
           </>
